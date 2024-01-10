@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, footer, nav {background-color: aliceblue;}
+
+.parent {
+    margin: 1rem 2vw;
+}
+
+.parent section {
+    border: 1px solid #415541;
+    background-color: #e915e9;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem 0;
+}
+
+.parent span {
+    background-color: #415541;
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: .75rem 0;
+}
+
+.parent p {
+    padding: 10px;
+}
