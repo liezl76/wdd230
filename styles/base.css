@@ -1,31 +1,66 @@
-* {
+body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-header, footer, nav {background-color: aliceblue;}
-
-.parent {
-    margin: 1rem 2vw;
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
 }
 
-.parent section {
-    border: 1px solid #415541;
-    background-color: #e915e9;
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 1rem 0;
-}
-
-.parent span {
-    background-color: #415541;
-    color: #fff;
-    display: block;
-    text-align: center;
-    padding: .75rem 0;
-}
-
-.parent p {
+header {
+    background-color: #f1f1f1;
     padding: 10px;
+    text-align: center;
+}
+
+header img {
+    border-radius: 50%;
+}
+
+header span {
+    display: block;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+nav {
+    background-color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+}
+
+ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
