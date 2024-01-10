@@ -5,12 +5,15 @@ body, h1, h2, p, ul, li {
 
 body {
     font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
+    font-weight: 100;
 }
 
 header {
     background-color: #f1f1f1;
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
     text-align: center;
 }
 
@@ -25,7 +28,7 @@ header span {
 }
 
 nav {
-    background-color: #333;
+    background-color: #beb8b8;
 }
 
 ul {
@@ -41,7 +44,7 @@ ul li {
 
 ul li a {
     text-decoration: none;
-    color: white;
+    color: rgb(14, 14, 14);
 }
 
 main {
