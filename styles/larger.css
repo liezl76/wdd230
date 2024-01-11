@@ -1,11 +1,8 @@
-@media only screen and (min-width: 66rem) {
-    .parent {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 10px;
-    }
-
-    .parent section {
-        box-shadow: 1px 10px black;
-    }
+@media (min-width: 640px) {
+	nav ul {
+		display: flex;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+	}
 }
