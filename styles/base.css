@@ -14,7 +14,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 20px;
+	padding: 10px;
 }
 
 header,
@@ -43,11 +43,8 @@ nav a {
 }
 
 nav a:hover {
-	text-decoration:overline;
-}
-
-.active {
-	color: yellow;
+	background-color: aquamarine;
+	color: #36454f;
 }
 
 main {
@@ -69,4 +66,9 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+footer img {
+	width: 20px;
+	height: 15px;
 }
