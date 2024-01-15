@@ -47,10 +47,15 @@ nav .active {
     background-color: rgba(0, 0, 0, 0, 0.3);
 }
 
+.container {
+    margin: 1rem 2vw;
+}
+
 .card {
     border: 1px solid #415541;
     background-color: #ccc;
     border-radius: 10px;
+    overflow: hidden;
     margin: 1rem 0;
 }
 
@@ -59,11 +64,7 @@ h2 {
     color: #fff;
     display: block;
     text-align: center;
-    padding: .75rem 0;
-}
-
-li {
-    padding: 1px;
+    padding: .5rem 0;
 }
 
 footer {
