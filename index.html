@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liezl G. Lizardo - WDD 230 - Web Frontend Development</title>
-    <meta name="desription" content="WDD 230 - Web Frontend Development | Liezl G. Lizardo | Section B4">
+    <meta name="description" content="WDD 230 - Web Frontend Development | Liezl G. Lizardo | Section B4">
     <meta name="author" content="[Liezl G. Lizardo]">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -14,8 +14,10 @@
 </head>
 <body>
     <header>
-        <img src="images/profile.png" alt="Liezl Lizardo Profile">
-        <span>Liezl G. Lizardo</span>
+        <div>
+            <img src="images/profile.png" alt="Liezl Lizardo Profile">
+            <span>Liezl G. Lizardo</span>
+        </div>
     </header>
     <nav>
         <ul>
@@ -27,25 +29,28 @@
     </nav>
     <main>
         <h1>WDD 230: Web Frontend Development</h1>
-        <section class="card">
-            <h2>Learning Activities</h2>
-            <ul>
-                <li><a href="week01/holygrail.html">Week 01: Layout</a> | <a href="week01/media-query.html">Media Query</a> | <a href="https://codepen.io/iziel-1106/pen/poYyNMj">JS Pen</a></li>
-                <li><a href="#">Week 02: </a></li>
-                <li><a href="#">Week 03: </a></li>
-                <li><a href="#">Week 04: </a></li>
-                <li><a href="#">Week 05: </a></li>
-                <li><a href="#">Week 06: </a></li>
-                <li><a href="#">Week 07: </a></li>
-            </ul>
-        </section>
-        <section class="card">
-            <h2>Information</h2>
-            <p>Weather: [Weather Placeholder]</p>
-        </section>
+        <div class="container">
+            <section class="card">
+                <h2>Learning Activities</h2>
+                <ul>
+                    <li><a href="week01/holygrail.html">Week 01: Layout</a> | <a href="week01/media-query.html">Media Query</a> | <a href="https://codepen.io/iziel-1106/pen/poYyNMj">JS Pen</a></li>
+                    <li><a href="#">Week 02: </a></li>
+                    <li><a href="#">Week 03: </a></li>
+                    <li><a href="#">Week 04: </a></li>
+                    <li><a href="#">Week 05: </a></li>
+                    <li><a href="#">Week 06: </a></li>
+                    <li><a href="#">Week 07: </a></li>
+                </ul>
+            </section>
+            <section class="card">
+                <h2>Information</h2>
+                <p>Weather: [Weather Placeholder]</p>
+            </section>
+        </div>
     </main>
-    <footer><p>&#169; <span id="currentYear"></span> Liezl G. Lizardo | <img src="images/philippines.jpg" alt="Philippines Flag"> </p>
-            <p id="lastModified"></p 
+    <footer>
+        <p>&#169; <span id="currentYear"></span> Liezl G. Lizardo | <img src="images/philippines.jpg" alt="Philippines Flag"> </p>
+        <p id="lastModified"></p>
     </footer>
     <script src="scripts/getDates.js"></script>
 </body>
