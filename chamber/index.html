@@ -1,11 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber</title>
+    <title>Guimaras Chamber of Commerce</title>
+    <meta name="description" content="Guimaras Chamber of Commerce">
+    <meta name="author" content="[Liezl G. Lizardo]">
+    <meta property="og:title" content="Guimaras Chamber of Commerce">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://liezl76.github.io/wdd230/">
+    <meta property="og:url" content="https://www.facebook.com/lzel.lizardo/">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <div>
+            <img src="images/profile.png" alt="Liezl Lizardo Profile">
+            <span>Liezl G. Lizardo</span>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <section class="card">
+                <h2>Events</h2>
+                <ul>
+                    <li><a href="#">Week 04: </a></li>
+                    <li><a href="#">Week 05: </a></li>
+                </ul>
+            </section>
+            <section class="card">
+                <h2>Weather</h2>
+                <p>  </p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&#169; <span id="currentYear"></span> Liezl G. Lizardo | <img src="images/philippines.jpg" alt="Philippines Flag"> </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
 </body>
 </html>
