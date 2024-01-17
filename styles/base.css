@@ -35,6 +35,36 @@ nav {
     margin: 1rem;
 }
 
+#myButton::before {
+    //content: "=";
+}
+
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .25rem 2vw;
+}
+
+ul.menuLinks li a {
+    display: block;
+    padding: .75re 2vw;
+    color: #fff;
+    text-decoration: none;
+}
+
+li.current-menu-item a {
+    background-color: rgba(0,0, 0, 0.2);
+}
+
+ul.menuLinks {
+    display: none;
+}
+
 nav ul {
 	list-style-type: none;
 }
@@ -51,9 +81,9 @@ nav a:hover {
 	background-color: rgb(255, 255, 255, 0.2);
 }
 
-nav .active {
+/* nav .active {
     background-color: rgba(0, 0, 0, 0, 0.3);
-}
+} */
 
 .container {
     margin: 1rem 2vw;
@@ -99,4 +129,13 @@ footer {
 footer img {
     width: 20px;
 	height: 15px;
+}
+
+/*CSS for the open class */
+#myButton.open::before {
+    //content: "x";
+}
+
+ul.open.menuLinks {
+    display: block;
 }
