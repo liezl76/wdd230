@@ -98,9 +98,9 @@ nav a:hover {
 	background-color: rgb(255, 255, 255, 0.2);
 }
 
-/* nav .active {
+nav .active {
     background-color: rgba(0, 0, 0, 0, 0.3);
-} */
+}
 
 .container {
     margin: 1rem 2vw;
@@ -108,7 +108,7 @@ nav a:hover {
 
 .card {
     border: 1px solid #030303;
-    background-color: #F2DEBA;
+    background-color: none;
     padding: 15px;
     border-radius: 2.5px;
     overflow: hidden;
@@ -128,11 +128,7 @@ h3 {
 }
 
 ul li {
-    margin: 2rem;
-}
-
-p {
-    margin: 1rem;
+    color: #fff;
 }
 
 footer {
@@ -149,9 +145,9 @@ footer img {
 }
 
 /*CSS for the open class */
-/* #myButton.open::before {
+#myButton.open::before {
     content: "x";
-} */
+}
 
 ul.open.menuLinks {
     display: block;
