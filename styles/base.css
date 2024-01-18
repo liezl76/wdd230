@@ -53,7 +53,7 @@ nav {
 }
 
 #myButton::before {
-    content: "=";
+    content: "\2630";
 }
 
 #myButton {
@@ -80,6 +80,7 @@ li.current-menu-item a {
 
 ul.menuLinks {
     display: none;
+    list-style-type: none;
 }
 
 nav ul {
