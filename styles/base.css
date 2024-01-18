@@ -13,7 +13,7 @@ header {
     gap: 2rem;
     align-items: center;
     justify-content: center;
-    background-color: #820000;
+    background-color: #657c65;
     padding: 5px;
     margin: 1rem;
 }
@@ -90,7 +90,7 @@ nav a:hover {
 }
 
 .card {
-    border: 1px solid #415541;
+    border: 1px solid #b8c2b8;
     background-color: #F2DEBA;
     padding: 20px;
     border-radius: 5px;
