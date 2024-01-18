@@ -132,6 +132,10 @@ ul li {
     color: #fff;
 }
 
+div.container li a {
+    color: green;
+}
+
 footer {
     background-color: #152716;
     color: white;
