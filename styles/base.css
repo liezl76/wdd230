@@ -52,9 +52,9 @@ nav {
     margin: 1rem;
 }
 
-/* #myButton::before {
+#myButton::before {
     content: "=";
-} */
+}
 
 #myButton {
     font-size: 2rem;
