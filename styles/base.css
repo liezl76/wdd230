@@ -35,9 +35,9 @@ nav {
     margin: 1rem;
 }
 
-#myButton::before {
-    //content: "=";
-}
+/* #myButton::before {
+    content: "=";
+} */
 
 #myButton {
     font-size: 2rem;
@@ -132,9 +132,9 @@ footer img {
 }
 
 /*CSS for the open class */
-#myButton.open::before {
-    //content: "x";
-}
+/* #myButton.open::before {
+    content: "x";
+} */
 
 ul.open.menuLinks {
     display: block;
