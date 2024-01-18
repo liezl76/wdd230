@@ -9,6 +9,7 @@ body {
 }
 
 header {
+    position: relative;
     display: flex;
     gap: 2rem;
     align-items: center;
@@ -21,6 +22,15 @@ header {
 header img {
     width: 100px;
 	height: 100px;
+}
+
+#darkBtn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 24px;
+    background-color: #fff;
+    cursor: pointer;
 }
 
 h1 {
