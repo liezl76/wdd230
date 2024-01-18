@@ -33,6 +33,14 @@ header img {
     cursor: pointer;
 }
 
+main.dark {
+    color: #152716;
+}
+
+main.dark h2 {
+    color: #052407;
+}
+
 h1 {
     display: inline-block;
     color: white;
