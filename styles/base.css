@@ -24,12 +24,11 @@ header img {
 	height: 100px;
 }
 
-#darkBtn {
+#mode {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    width: 24px;
-    background-color: #487e48;
+    width: 28px;
     cursor: pointer;
 }
 
