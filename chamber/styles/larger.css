@@ -1,26 +1,31 @@
-@media only screen and (min-width: 768px) {
-    main {
-        display: flex;
-        justify-content: space-between;
-    }
+@media (min-width: 500px) {
+	nav ul {
+		display: flex;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+	}
 
-    #hero {
-        width: 60%;
-        display: inline-block;
-    }
+	.container {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		column-gap: 10px;
+	}
 
-    #hero-msg {
-        width: 80%;
-        margin: 0 auto;
-    }
+	.card {
+		box-shadow: 1px 1px 10px black;
+	}
 
-    .card {
-        width: 30%;
-        margin-bottom: 0;
-    }
+	#myButton {
+		display: none;
+	}
 
-    footer {
-        display: flex;
-        justify-content: space-between;
-    }
+	ul.menuLinks, ul.menuLinks.open {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	ul.menuLinks a:hover {
+		background-color: rgba(255, 255, 255, 0.2);
+	}
 }
