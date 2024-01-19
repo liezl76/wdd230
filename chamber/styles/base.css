@@ -53,8 +53,7 @@ main {
 }
 
 #hero-img {
-    width: 200%;
-    height: 50%;
+    width: 150%;
 }
 
 .card {
@@ -70,4 +69,9 @@ footer {
     color: #fff;
     padding: 10px;
     text-align: center;
+}
+
+footer img {
+    width: 20px;
+	height: 15px;
 }
