@@ -20,39 +20,75 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <div>
-            <img src="images/profile.png" alt="Liezl Lizardo Profile">
-            <span>Liezl G. Lizardo</span>
-        </div>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/logo_icon.png" alt="Dry Oar Logo">
+        </a>
+        <nav>
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+                <li><a href="#">Form</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Chamber</a></li>
-            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
-            <li><a href="#">Form</a></li>
-        </ul>
-    </nav>
+    <!-- Main Content -->
     <main>
-        <div class="container">
-            <section class="card">
-                <h2>Events</h2>
-                <ul>
-                    <li><a href="#">Week 04: </a></li>
-                    <li><a href="#">Week 05: </a></li>
-                </ul>
-            </section>
-            <section class="card">
-                <h2>Weather</h2>
-                <p>  </p>
-            </section>
+        <!-- Hero Section -->
+        <div id="hero">
+            <div id="hero-box">
+                <img id="hero-img" src="images/bikers-hill.jpg" alt="home province">
+            </div>
+            <!-- <section id="hero-msg">
+                <div class="button-box">
+                    <a class="book" href="rates.html">Join Now</a>
+                </div>
+            </section> -->
         </div>
+
+        <!-- Current Events Section -->
+        <section class="card">
+            <h2>Events</h2>
+            <div>
+                <a href="#">
+                    <h3>Week 04: Annual Chamber Meeting</h3>
+                    <p>Date: January 25, 2024</p>
+                    <p>Time: 6:00 PM - 8:00 PM</p>
+                    <p>Location: Chamber Headquarters</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Weather Card Section -->
+        <section class="card">
+            <h2>Weather</h2>
+            <p>Placeholder Weather Information</p>
+        </section>
+
+        <!-- Spotlight Card Section -->
+        <section class="card">
+            <h3>ThankFul Transport</h3>
+            <p>We get it there for you</p>
+        </section>
+        <section class="card">
+            <h3>Code Primera</h3>
+            <p>After school coding</p>
+        </section>
+        <section class="card">
+            <h3>Build a Treefort</h3>
+            <p>over 100 Plans</p>
+        </section>
     </main>
+
+    <!-- Footer -->
     <footer>
-        <p>&#169; <span id="currentYear"></span> Liezl G. Lizardo | <img src="images/philippines.jpg" alt="Philippines Flag"> </p>
+        <p>&#169; <span id="currentYear"></span> Liezl G. Lizardo | WDD 230 Project |<img src="images/philippines.jpg" alt="Philippines Flag"></p>
         <p id="lastModified"></p>
     </footer>
+
+    <!-- JavaScript for dynamic content -->
     <script src="scripts/getDates.js"></script>
 </body>
 </html>

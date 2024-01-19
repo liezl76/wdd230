@@ -1,0 +1,26 @@
+@media only screen and (min-width: 768px) {
+    main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #hero {
+        width: 60%;
+        display: inline-block;
+    }
+
+    #hero-msg {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .card {
+        width: 30%;
+        margin-bottom: 0;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
