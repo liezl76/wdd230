@@ -45,7 +45,7 @@ nav {
 }
 
 #myButton::before {
-    content: "\2630";
+    content: "=";
 }
 
 #myButton {
@@ -121,7 +121,7 @@ h3 {
 }
 
 ul li {
-    color: #fff;
+    margin: .5rem 0;
 }
 
 footer {
@@ -135,6 +135,37 @@ footer {
 footer img {
     width: 20px;
 	height: 15px;
+}
+
+.dark-mode header {
+    background-color: #1a1a1a;
+}
+
+.dark-mode body {
+    color: #fff;
+}
+
+.dark-mode nav {
+    background-color: #333;
+}
+
+.dark-mode ul.menuLinks li a {
+    color: #fff;
+}
+
+.dark-mode .card {
+    border-color: #fff;
+    background-color: #1a1a1a;
+}
+
+.dark-mode h3 {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode footer {
+    background-color: #1a1a1a;
+    color: #fff;
 }
 
 /*CSS for the open class */
