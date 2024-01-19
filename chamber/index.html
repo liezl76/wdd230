@@ -22,18 +22,23 @@
 <body>
     <!-- Header -->
     <header>
-        <a id="logo_link" href="index.html">
-            <img class="logo" src="images/logo_icon.png" alt="Dry Oar Logo">
-        </a>
-        <nav>
-            <ul>
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Chamber</a></li>
-                <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
-                <li><a href="#">Form</a></li>
-            </ul>
-        </nav>
+        <div>
+            <img src="images/dark.svg" id="mode" alt="dark mode">
+        </div>
+        <div>
+            <img src="images/logo.png" alt="logo">
+            <h1>Guimaras Chamber of Commerce</h1>
+        </div>
     </header>
+    <nav>
+        <button id="myButton">&#9776</button>
+        <ul class="menuLinks">
+            <li class="current-menu-item"><a href="#">Chamber</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
     <!-- Main Content -->
     <main>
         <!-- Hero Section -->
@@ -90,5 +95,7 @@
 
     <!-- JavaScript for dynamic content -->
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkMode.js"></script>
 </body>
 </html>
