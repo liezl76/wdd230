@@ -95,51 +95,36 @@ nav .active {
     background-color: rgba(0, 0, 0, 0, 0.3);
 }
 
-.container {
-    margin: 1rem 2vw;
-}
-
-.card {
-    border: 1px solid #030303;
-    background-color: beige;
-    padding: 5px;
-    border-radius: 2.5px;
-    overflow: hidden;
-    margin: 1rem 0;
-}
-
-h2 {
-    margin: 1rem;
-}
-
-h3 {
-    background-color: #e76915;
-    color: #fff;
-    display: block;
-    text-align: center;
-    padding: .5rem 0;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 0.5rem 0;
-}
-
-ul li a {
-    color: #04af0d; 
-    text-decoration: none;
-}
-
-.card {
-    background-color: #fff;
-    margin-bottom: 20px;
+main {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
+}
+
+#hero {
+    text-align: center;
+    padding: 20px;
+}
+
+#hero-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container, .container1 {
+    margin: 1rem 2vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #ede8e8;
+    padding: 20px;
+    margin: 0 10px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 footer {

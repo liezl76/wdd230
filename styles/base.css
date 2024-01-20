@@ -108,18 +108,6 @@ nav .active {
     margin: 1rem 0;
 }
 
-h2 {
-    margin: 1rem;
-}
-
-h3 {
-    background-color: #820000;
-    color: #fff;
-    display: block;
-    text-align: center;
-    padding: .5rem 0;
-}
-
 ul {
     list-style-type: none;
     padding: 0;
