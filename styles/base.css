@@ -91,6 +91,15 @@ nav a:hover {
 	background-color: rgb(255, 255, 255, 0.2);
 }
 
+.hero picture {
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
 .container {
     margin: 1rem 2vw;
 }
