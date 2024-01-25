@@ -140,6 +140,15 @@ ul li a {
     text-decoration: none;
 }
 
+p {
+    margin: 1rem;
+}
+
+figure {
+    position: relative;
+    text-align: center;
+}
+
 footer {
     background-color: #152716;
     color: white;
