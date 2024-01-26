@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guimaras Chamber of Commerce</title>
+    <meta name="description" content="Guimaras Chamber of Commerce">
+    <meta name="author" content="[Liezl G. Lizardo]">
+    <meta property="og:title" content="Guimaras Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.hodgepodgelifestyle.com/wp-content/uploads/2022/08/81678253_10157100202723657_7925778690640707584_n.jpg">
+    <meta property="og:url" content="https://liezl76.github.io/wdd230/chamber">
+    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div>
+            <img src="images/dark.svg" id="mode" alt="dark mode">
+        </div>
+        <div>
+            <img src="images/logo.png" alt="logo">
+            <h1>Chamber of Commerce</h1>
+        </div>
+    </header>
+    <nav>
+        <button id="myButton">&#9776</button>
+        <ul class="menuLinks">
+            <li class="current-menu-item"><a href="#">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="week01/chamber-site-plan.html">Directory</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <section class="card">
+                <picture>
+                    <img src="images/Statistical Board.webp" alt="Stats Image" loading="lazy" width="400" 
+                    height="600"></picture>
+                <picture>
+                    <img src="images/stats1.webp" alt="Stats Image" loading="lazy" width="400"
+                    height="600"></picture>
+                <picture>
+                    <img src="images/stats2.webp" alt="Stats Image" loading="lazy" width="400"
+                    height="600"></picture>
+                <picture>
+                    <img src="images/stats3.webp" alt="Stats Image" loading="lazy" width="400"
+                    height="600"></picture>
+                <picture>
+                    <img src="images/stats4.webp" alt="Stats Image" loading="lazy" width="400"
+                    height="600"></picture>
+                <picture>
+                    <img src="images/stats5.webp" alt="Stats Image" loading="lazy" width="400"
+                    height="600"></picture>
+            </section>  
+            <section class="card">
+                <article>
+                <h1>Discover Guimaras</h1>
+                <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p><img src="images/logo.png" alt="logo"> Guimaras Chamber of Commerce | </p>
+        <p>&#169; <span id="currentYear"></span> Liezl G. Lizardo | WDD 230 Project |  <img src="images/philippines.jpg" alt="Philippines Flag"></p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <!-- JavaScript for dynamic content -->
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkMode.js"></script>
+</body>
+</html>
