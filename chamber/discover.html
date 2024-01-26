@@ -11,7 +11,7 @@
     <meta property="og:image" content="https://www.hodgepodgelifestyle.com/wp-content/uploads/2022/08/81678253_10157100202723657_7925778690640707584_n.jpg">
     <meta property="og:url" content="https://liezl76.github.io/wdd230/chamber">
     <link rel="stylesheet" href="styles/discover.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/discover-large.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="icon" href="favicon.ico">
@@ -40,38 +40,85 @@
         </ul>
     </nav>
     <!-- Main Content -->
-    <main>
-        <div class="container">
-            <section class="card">
-                <picture>
-                    <img src="images/Statistical Board.webp" alt="Stats Image" loading="lazy" width="400" 
-                    height="600"></picture>
-                <picture>
-                    <img src="images/stats1.webp" alt="Stats Image" loading="lazy" width="400"
-                    height="600"></picture>
-                <picture>
-                    <img src="images/stats2.webp" alt="Stats Image" loading="lazy" width="400"
-                    height="600"></picture>
-                <picture>
-                    <img src="images/stats3.webp" alt="Stats Image" loading="lazy" width="400"
-                    height="600"></picture>
-                <picture>
-                    <img src="images/stats4.webp" alt="Stats Image" loading="lazy" width="400"
-                    height="600"></picture>
-                <picture>
-                    <img src="images/stats5.webp" alt="Stats Image" loading="lazy" width="400"
-                    height="600"></picture>
-            </section>  
-            <section class="card">
-                <article>
-                <h1>Discover Guimaras</h1>
-                <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-                </article>
-            </section>
-        </div>
-    </main>
-
+        <aside class="sidebar">
+            <div class="sidebar-content">
+                <!-- Sidebar content goes here -->
+                <p>
+                Nestled in the heart of the Philippines, Guimaras Island is a hidden
+                gem that beckons travelers seeking an idyllic tropical escape. With
+                its stunning landscapes, pristine beaches, and rich cultural
+                heritage, Guimaras embodies the essence of a true island paradise.
+                </p>
+        
+                <p>
+                Boasting an area of approximately 604.57 square kilometers, Guimaras
+                Island is located in the Western Visayas region. The island is
+                blessed with a natural splendor that captivates visitors from the
+                moment they set foot on its shores. Lush green hills roll across the
+                landscape, adorned with swaying palm trees and vibrant tropical
+                flora. As the island is relatively untouched by mass tourism, it
+                exudes an air of tranquility and serenity.
+                </p>
+        
+                <p>
+                For nature enthusiasts, Guimaras offers a myriad of outdoor
+                activities. Explore the island's lush interior by embarking on
+                nature trails that wind through verdant forests and lead to hidden
+                waterfalls. Hike up the slopes of Mt. Dinalman and be rewarded with
+                panoramic views of the surrounding islands. Snorkeling and diving
+                enthusiasts can discover a mesmerizing underwater world teeming with
+                vibrant coral reefs and diverse marine life.
+                </p>
+        
+                <h2>How To Get There</h2>
+        
+                <p>
+                Guimaras can be reached by air and boat from Manila and other
+                origins, via Iloilo City and Pulupandan, Negros Occidental. It can
+                be reached by fastcraft, RORO, and other sea-going vessels via
+                Iloilo Strait which is about 2.5 km. in length and Guimaras Strait
+                from Negros. The origin/destination point in Iloilo City are located
+                in Parola for fastcrafts with regular trips. Travel time is about 10
+                to 15 minutes. There are regular trips from Guimaras via San
+                Lorenzo, with fastcraft to Negros Occidental and vice-versa via
+                Pulupandan. Once on the island, various modes of transportation,
+                such as tricycles and jeepneys, allow visitors to explore its
+                charming towns and picturesque landscapes.
+                </p>
+        
+                <p>
+                Guimaras Island is a sanctuary of natural beauty, where time seems
+                to slow down, and worries fade away. Whether you seek a blissful
+                beach getaway, an adventure in the wilderness, or an immersion in
+                local culture, Guimaras offers it all. Its pristine beaches,
+                delectable mangoes, warm hospitality, and breathtaking vistas make
+                it an unforgettable destination. Come and experience the enchantment
+                of Guimaras, where paradise becomes a reality.
+                </p>
+            <div id="visit-message"></div>
+            </div>
+        </aside>
+        <main class="main-content">
+            <!-- Lazy-loaded images with captions -->
+            <picture>
+                <img src="images/Statistical Board.webp" alt="Stats Image" loading="lazy" width="400" 
+                height="600"></picture>
+            <picture>
+                <img src="images/stats1.webp" alt="Stats Image" loading="lazy" width="400"
+                height="600"></picture>
+            <picture>
+                <img src="images/stats2.webp" alt="Stats Image" loading="lazy" width="400"
+                height="600"></picture>
+            <picture>
+                <img src="images/stats3.webp" alt="Stats Image" loading="lazy" width="400"
+                height="600"></picture>
+            <picture>
+                <img src="images/stats4.webp" alt="Stats Image" loading="lazy" width="400"
+                height="600"></picture>
+            <picture>
+                <img src="images/stats5.webp" alt="Stats Image" loading="lazy" width="400"
+                height="600"></picture>
+        
     <!-- Footer -->
     <footer>
         <p><img src="images/logo.png" alt="logo"> Guimaras Chamber of Commerce | </p>
@@ -83,5 +130,6 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/darkMode.js"></script>
+    <script src="scripts/chamber.js"></script>
 </body>
 </html>
