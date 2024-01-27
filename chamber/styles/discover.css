@@ -133,6 +133,21 @@ img {
     font-size: 14px;
 }
 
+/*Image Gallery */
+.scroll-container {
+    background-color: #f5e0e0;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+  }
+  
+  .scroll-container img {
+    width: 25%;
+    padding: 10px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+  }
+
 footer {
     background-color: #e76915; /* Primary */
     color: black;
