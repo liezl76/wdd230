@@ -1,10 +1,3 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // Lazy loading images
-    const images = document.querySelectorAll('.image');
-    images.forEach(img => {
-        img.style.backgroundImage = `url(${img.getAttribute('data-src')})`;
-    });
-
     // Display visit message based on localStorage
     const visitMessage = document.getElementById('visit-message');
     const lastVisit = localStorage.getItem('lastVisit');
@@ -25,4 +18,3 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Update localStorage with the current date
     localStorage.setItem('lastVisit', currentDate);
-});

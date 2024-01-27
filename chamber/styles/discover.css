@@ -102,29 +102,20 @@ nav .active {
     padding: 30px;
 }
 
-.image-container {
-    max-width: 100%;
-}
-
-.image {
-    position: relative;
+img {
     width: 100%;
-    height: 200px;
-    background-color: #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
+    background: #000;
+    animation: fade 15s;
 }
 
-.image:hover {
-    transform: scale(1.1);
-}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
 
-.image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    100% {
+        opacity: 1;
+    }
 }
 
 .sidebar {
@@ -193,3 +184,4 @@ footer img {
 ul.open.menuLinks {
     display: block;
 }
+
