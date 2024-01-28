@@ -91,7 +91,7 @@ nav a:hover {
 	background-color: rgb(255, 255, 255, 0.2);
 }
 
-.main-content {
+.main-container {
     display: grid;
     grid-template-columns: 400px 1fr;
     gap: 30px;
@@ -115,12 +115,12 @@ picture {
 }
 
 .sidebar {
-    background-color: #faf5f5;
     padding: 20px;
     border-radius: 10px;
 }
 
-.sidebar-content {
+.main-content {
+    background-color: #faf5f5;
     padding: 20px;
     text-align: justify;
     text-indent: 20px;
