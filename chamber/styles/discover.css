@@ -130,7 +130,6 @@ picture {
 }
 
 .scroll-container {
-    background-color: #f5e0e0;
     overflow: auto;
     white-space: nowrap;
     padding: 10px;
