@@ -118,7 +118,7 @@ main {
     padding: 20px;
 }
 
-p, h3 {
+p, h3, a.book {
     color: black;
 }
 
