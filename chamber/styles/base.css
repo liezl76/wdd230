@@ -118,6 +118,10 @@ main {
     padding: 20px;
 }
 
+p, h3 {
+    color: black;
+}
+
 footer {
     background-color: #e76915; /* Primary */
     color: black;
