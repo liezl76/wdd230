@@ -103,7 +103,7 @@ nav a:hover {
     border-radius: 10px;
 }
 
-img {
+.picture {
     width: 100%;
     background: #000;
     animation: fade 15s;
@@ -137,7 +137,7 @@ img {
 }
   
 .scroll-container img {
-    width: 200px;
+    width: 50%;
     height: auto;
     padding: 10px;
     aspect-ratio: 3/2;
