@@ -109,11 +109,6 @@ img {
     animation: fade 15s;
 }
 
-.img a:hover{
-    background-color: rgba(206, 189, 189, 0.2);
-    animation: fade 15s;
-}
-
 @keyframes fade {
     0% {
         opacity: 0;
