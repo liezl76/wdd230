@@ -98,9 +98,19 @@ nav a:hover {
     padding: 30px;
 }
 
-picture {
+.sidebar {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+img {
     width: 100%;
     background: #000;
+    animation: fade 15s;
+}
+
+.img a:hover{
+    background-color: rgba(206, 189, 189, 0.2);
     animation: fade 15s;
 }
 
@@ -112,11 +122,6 @@ picture {
     100% {
         opacity: 1;
     }
-}
-
-.sidebar {
-    padding: 20px;
-    border-radius: 10px;
 }
 
 .main-content {
