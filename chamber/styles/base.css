@@ -34,7 +34,7 @@ header img {
 
 h1 {
     display: inline-block;
-    color: black;
+    color: white;
     position: relative;
     top: -20px;
 }
@@ -52,7 +52,7 @@ nav {
     font-size: 2rem;
     background: none;
     border: none;
-    color: black;
+    color: #fff;
     cursor: pointer;
     width: 100%;
     text-align: right;
@@ -62,7 +62,7 @@ nav {
 ul.menuLinks li a {
     display: block;
     padding: .75rem 2vw;
-    color: black;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -81,7 +81,7 @@ nav ul {
 
 nav a {
 	display: block;
-	color: black;
+	color: #fff;
 	text-align: center;
 	padding: .5rem;
 	text-decoration: none;
@@ -89,12 +89,6 @@ nav a {
 
 nav a:hover {
 	background-color: rgb(255, 255, 255, 0.2);
-}
-
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
 }
 
 #hero {
@@ -105,6 +99,12 @@ main {
 #hero-img {
     max-width: 100%;
     height: auto;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .container, .container1 {
@@ -118,13 +118,9 @@ main {
     padding: 20px;
 }
 
-p, h3, a.book {
-    color: black;
-}
-
 footer {
     background-color: #e76915; /* Primary */
-    color: black;
+    color: white;
     padding: 10px;
     text-align: center;
 }
