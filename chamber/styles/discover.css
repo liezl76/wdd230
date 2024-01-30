@@ -99,8 +99,10 @@ nav a:hover {
 }
 
 .sidebar {
-    padding: 20px;
-    border-radius: 10px;
+    margin: 0;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
 }
 
 .picture {
@@ -119,6 +121,10 @@ nav a:hover {
     }
 }
 
+.sidebar.scrolled .picture {
+    opacity: 1;
+}
+
 .main-content {
     background-color: #faf5f5;
     padding: 20px;
@@ -130,14 +136,13 @@ nav a:hover {
 }
 
 .scroll-container {
-    background-color: #faf5f5;
     overflow: auto;
     white-space: nowrap;
     padding: 10px;
 }
   
 .scroll-container img {
-    width: 50%;
+    width: 30%;
     height: auto;
     padding: 10px;
     aspect-ratio: 3/2;
