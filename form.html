@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liezl G. Lizardo - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development | Liezl G. Lizardo | Section B4">
+    <meta name="author" content="[Liezl G. Lizardo]">
+    <meta property="og:title" content="Liezl G. Lizardo - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.hodgepodgelifestyle.com/wp-content/uploads/2022/08/81678253_10157100202723657_7925778690640707584_n.jpg">
+    <meta property="og:url" content="https://liezl76.github.io/wdd230/">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="images/dark.svg" id="mode" alt="dark mode">
+        </div>
+        <div>
+            <img src="images/profile.png" alt="Liezl Lizardo Profile">
+            <h1>Liezl G. Lizardo</h1>
+        </div>
+    </header>
+    <nav>
+        <button id="myButton">&#9776;</button>
+        <ul class="menuLinks">
+            <li><a href="https://liezl76.github.io/wdd230/chamber/">Chamber</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li class="active"><a href="form.html">Form</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <header></header>
+        <div id="formmessage"></div>
+        <h1>Contact Us</h1>
+        <form method="get">
+            <p class="smaller">*️⃣ Indicates a required field</p>
+        
+            <label for="fullname" class="req">Name</label>
+            <input type="text" id="fullname" name="fullname" required placeholder="Please enter your full name">
+            <label for="email" class="req">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="Please use your school email address">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+            <label for="keyphrase">Your Key Phrase</label>
+            <input type="text" id="keyphrase" name="keyphrase" pattern="[a-zA-Z -]{6,}" placeholder="At least six characters long. No numbers.">
+            <label for="keyphrase2">Re-enter Your Key Phrase</label>
+            <input type="text" id="keyphrase2" name="keyphrase2">
+        
+            <label for="comments" class="req">Your Message</label>
+            <textarea id="comments" name="comments" required></textarea>
+            <button id="btnSubmit" type="submit">Send Message</button>
+            <input type="hidden" value="43aster">
+        </form>
+    </main>
+
+    <footer>
+        <p>&#169; <span id="currentYear"></span> Liezl G. Lizardo | <img src="images/philippines.jpg" alt="Philippines Flag"> </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/pageCounter.js"></script>
+    <script src="scripts/formvalidation.js"></script>
+</body>
+</html>
