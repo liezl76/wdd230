@@ -4,24 +4,11 @@
 	box-sizing: border-box;
 }
 
-/* body {
-	font-family: Roboto, helvetica, sans-serif;
-	background-color: #ddd;
-} */
-
 main {
 	margin: 20px auto;
 	border: 1px solid rgba(0, 0, 0, 0.1);
-	background-color: #fff;
 	max-width: 500px;
 } 
-
-/* header,
-footer {
-	height: 30px;
-	background-color: #444;
-	border: 1px solid rgba(0, 0, 0, 0.2);
-} */ 
 
 form {
 	margin: 20px;
@@ -41,7 +28,7 @@ select {
 	padding: 10px;
 	margin-bottom: 20px;
 	border: 0;
-	border-bottom: 1px solid navy;
+	border-bottom: 1px solid rgb(33, 73, 45);
 	font-size: 1.1rem;
 }
 
@@ -52,7 +39,6 @@ button {
 }
 
 label {
-	color: navy;
 	font-size: 16px;
 }
 
@@ -68,7 +54,7 @@ input::placeholder {
 #formmessage {
 	margin: 10px;
 	padding: 0.5rem;
-	color: red;
+	color: rgb(13, 27, 19);
 }
 
 #keyphrase:invalid {
@@ -76,10 +62,10 @@ input::placeholder {
 	animation: shaketext 500ms;
 }
 
-/* input[required] ^ label::after {
+input[required] label::after {
 	font-size: 10px;
 	content: " *️⃣";
-} */
+}
 
 .req::after {
 	font-size: 10px;
