@@ -1,3 +1,9 @@
+:root {
+	--main-text-color: #333;
+	--main-bg-color: #f8f8f8;
+	--accent-color: #ff6600;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -8,7 +14,7 @@ main {
 	margin: 20px auto;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	max-width: 500px;
-} 
+}
 
 form {
 	margin: 20px;
@@ -20,6 +26,7 @@ form {
 h1 {
 	margin: 20px;
 	font-size: 1.5rem;
+	color: var(--main-text-color-light);
 }
 
 input,
@@ -32,10 +39,40 @@ select {
 	font-size: 1.1rem;
 }
 
+form label.top,
+form div {
+	display: block;
+	padding-top: 1rem;
+	color: #9c2c13;
+	font-size: .8rem;
+}
+
+form label.top input,
+form label.top select {
+	display: block;
+	font-size: 1rem;
+	border: solid 1px #999;
+	border-radius: 4px;
+	padding: .75rem;
+	color: #555;
+	width: 100%;
+	max-width: 20rem;
+	background-color: var(--main-bg-color);
+}
+
 button {
 	padding: 10px;
 	font-size: 1.2rem;
 	font-weight: 700;
+	background-color: var(--accent-color);
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #ff751a;
 }
 
 label {
@@ -45,6 +82,8 @@ label {
 input:focus,
 textarea:focus {
 	outline: none;
+	border-color: var(--accent-color);
+	box-shadow: 0 0 5px rgba(255, 102, 0, 0.5);
 }
 
 input::placeholder {
@@ -52,25 +91,22 @@ input::placeholder {
 }
 
 #formmessage {
-	visibility: none;
+	visibility: hidden;
 	margin: 10px;
 	padding: 0.5rem;
 	color: rgb(13, 27, 19);
 }
 
-#keyphrase:invalid {
-	background-color: #fff0f3;
-	animation: shaketext 500ms;
+#formmessage.show {
+	visibility: visible;
 }
 
-/* input[required] label::after {
-	font-size: 10px;
-	content: " *️⃣";
-} */
+#password2 {
+	transition: background-color 0.3s ease;
+}
 
-.req::after {
-	font-size: 10px;
-	content: " *️⃣";
+#password2.invalid {
+	background-color: #fff0f3;
 }
 
 .smaller {
@@ -92,54 +128,52 @@ input::placeholder {
 	}
 }
 
-/* use reverse flexbox to take advantage of flex-direction: reverse */
 .star-rating {
-  display: flex;
-  align-items: center;
-  width: 160px;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  margin: 40px auto;
-  position: relative;
-}
-/* hide the inputs */
-.star-rating input {
-  display: none;
-}
-/* set properties of all labels */
-.star-rating > label {
-  width: 30px;
-  height: 30px;
-  font-family: Arial;
-  font-size: 30px;
-  transition: 0.2s ease;
-  color: orange;
-}
-/* give label a hover state */
-.star-rating label:hover {
-  color: #ff69b4;
-  transition: 0.2s ease;
-}
-.star-rating label:active::before {
-  transform:scale(1.1);
+	display: flex;
+	align-items: center;
+	width: 160px;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	margin: 40px auto;
+	position: relative;
 }
 
-/* set shape of unselected label */
-.star-rating label::before {
-  content: '\2606';
-  position: absolute;
-  top: 0px;
-  line-height: 26px;
+.star-rating input {
+	display: none;
 }
-/* set full star shape for checked label and those that come after it */
+
+.star-rating > label {
+	width: 30px;
+	height: 30px;
+	font-family: Arial;
+	font-size: 30px;
+	transition: 0.2s ease;
+	color: orange;
+}
+
+.star-rating label:hover {
+	color: #ff69b4;
+	transition: 0.2s ease;
+}
+
+.star-rating label:active::before {
+	transform: scale(1.1);
+}
+
+.star-rating label::before {
+	content: '\2606';
+	position: absolute;
+	top: 0px;
+	line-height: 26px;
+}
+
 .star-rating input:checked ~ label:before {
-  content:'\2605';
+	content: '\2605';
 }
 
 @-moz-document url-prefix() {
-  .star-rating input:checked ~ label:before {
-  font-size: 36px;
-  line-height: 21px;
-  }
-}  
-
+	.star-rating input:checked ~ label:before {
+		font-size: 36px;
+		line-height: 21px;
+	}
+}

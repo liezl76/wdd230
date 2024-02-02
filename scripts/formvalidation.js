@@ -4,17 +4,28 @@ const message = document.querySelector("#formmessage");
 
 kp2.addEventListener("focusout", checkSame);
 
-// This should be refactored.
 function checkSame() {
-	if (kp1.value !== kp2.value) {
-		message.textContent = "❗Key Phrases DO NOT MATCH!";
-		message.style.visibility = "show";
-		kp2.style.backgroundColor = "#fff0f3";
-		kp2.value = "";
-		kp2.focus();
-	} else {
-		message.style.display = "none";
-		kp2.style.backgroundColor = "#fff";
-		kp2.style.color = "#000";
-	}
+    if (kp1.value !== kp2.value) {
+        showMessage("❗ Passwords DO NOT MATCH!");
+        kp2.style.backgroundColor = "#fff0f3";
+        kp2.value = "";
+        kp2.focus();
+    } else {
+        hideMessage();
+        kp2.style.backgroundColor = "#fff";
+        kp2.style.color = "#000";
+    }
 }
+
+function showMessage(msg) {
+    message.textContent = msg;
+    message.style.visibility = "visible";
+}
+
+function hideMessage() {
+    message.style.visibility = "hidden";
+}
+
+document.getElementById('pagerating').addEventListener('input', function () {
+    document.getElementById('ratingValue').innerText = this.value;
+});

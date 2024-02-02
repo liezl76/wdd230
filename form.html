@@ -40,57 +40,30 @@
     </nav>
 
     <main>
-        <header></header>
         <div id="formmessage"></div>
         <h1>Contact Us</h1>
-        <form method="get">
+        <form id="contactForm" method="get" onsubmit="return validateForm()">
             <p class="smaller">*️⃣ Indicates a required field</p>
-        
-            <label for="username" class="req">Username</label>
-            <input type="text" id="username" name="username" required placeholder="Please enter your Username">
-            <label for="password">Your Password</label>
-            <input type="password" id="password" name="password" pattern="[a-zA-Z -]{6,}" required placeholder="At least six characters long. No numbers.">
-            <label for="password2">Re-enter Your Password</label>
-            <input type="text" id="pasword2" name="password2" required>
-            <label for="email" class="req">Email Address</label>
-            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" required placeholder="Please enter a valid email address">
-      
-            <label for="pagerating">Page Rating</label>
-            <input type="text" id="pagerating" name="pagerating" required placeholder="Please rate from 1 to 10 with 1 is the lowest">
-            <div class="star-rating">
-                <input type="radio" name="stars" id="star-a" value="10">
-                <label for="star-a"></label>
-          
-                <input type="radio" name="stars" id="star-b" value="9">
-                <label for="star-b"></label>
-            
-                <input type="radio" name="stars" id="star-c" value="8">
-                <label for="star-c"></label>
-            
-                <input type="radio" name="stars" id="star-d" value="7">
-                <label for="star-d"></label>
-            
-                <input type="radio" name="stars" id="star-e" value="6">
-                <label for="star-e"></label>
 
-                <input type="radio" name="stars" id="star-f" value="5">
-                <label for="star-a"></label>
-          
-                <input type="radio" name="stars" id="star-g" value="4">
-                <label for="star-b"></label>
-            
-                <input type="radio" name="stars" id="star-h" value="3">
-                <label for="star-c"></label>
-            
-                <input type="radio" name="stars" id="star-i" value="2">
-                <label for="star-d"></label>
-            
-                <input type="radio" name="stars" id="star-j" value="1">
-                <label for="star-e"></label>
-          </div>
+            <label for="username" class="top">Username</label>
+            <input type="text" id="username" name="username" required placeholder="Please enter your Username">
+
+            <label for="password" class="top">Your Password</label>
+            <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}" required placeholder="At least eight alpha-numeric characters only.">
+
+            <label for="password2" class="top">Re-enter Your Password</label>
+            <input type="password" id="password2" name="password2" required>
+
+            <label for="email" class="top">Email Address</label>
+            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" required placeholder="Please enter a valid email address">
+
+            <label for="pagerating">Page Rating</label>
+            <input type="range" id="pagerating" name="pagerating" min="1" max="10" step="1" value="5">
+            <span id="ratingValue">5</span>
+
+            <button type="submit">Submit</button>
         </form>
     </main>
-
     <footer>
         <p>&#169; <span id="currentYear"></span> Liezl G. Lizardo | <img src="images/philippines.jpg" alt="Philippines Flag"> </p>
         <p id="lastModified"></p>
