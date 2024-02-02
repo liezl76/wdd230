@@ -27,6 +27,7 @@ h1 {
 	margin: 20px;
 	font-size: 1.5rem;
 	color: var(--main-text-color-light);
+	text-indent: 10px;
 }
 
 input,
@@ -45,6 +46,7 @@ form div {
 	padding-top: 1rem;
 	color: #9c2c13;
 	font-size: .8rem;
+	color: var(--main-text-color-light);
 }
 
 form label.top input,
@@ -61,7 +63,9 @@ form label.top select {
 }
 
 button {
+	width: 25%;
 	padding: 10px;
+	padding-top: 10px;
 	font-size: 1.2rem;
 	font-weight: 700;
 	background-color: var(--accent-color);
@@ -125,55 +129,5 @@ input::placeholder {
 	}
 	75% {
 		transform: translateX(3px);
-	}
-}
-
-.star-rating {
-	display: flex;
-	align-items: center;
-	width: 160px;
-	flex-direction: row-reverse;
-	justify-content: space-between;
-	margin: 40px auto;
-	position: relative;
-}
-
-.star-rating input {
-	display: none;
-}
-
-.star-rating > label {
-	width: 30px;
-	height: 30px;
-	font-family: Arial;
-	font-size: 30px;
-	transition: 0.2s ease;
-	color: orange;
-}
-
-.star-rating label:hover {
-	color: #ff69b4;
-	transition: 0.2s ease;
-}
-
-.star-rating label:active::before {
-	transform: scale(1.1);
-}
-
-.star-rating label::before {
-	content: '\2606';
-	position: absolute;
-	top: 0px;
-	line-height: 26px;
-}
-
-.star-rating input:checked ~ label:before {
-	content: '\2605';
-}
-
-@-moz-document url-prefix() {
-	.star-rating input:checked ~ label:before {
-		font-size: 36px;
-		line-height: 21px;
 	}
 }
