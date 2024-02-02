@@ -1,5 +1,5 @@
-const kp1 = document.querySelector("#keyphrase");
-const kp2 = document.querySelector("#keyphrase2");
+const kp1 = document.querySelector("#password");
+const kp2 = document.querySelector("#password2");
 const message = document.querySelector("#formmessage");
 
 kp2.addEventListener("focusout", checkSame);

@@ -46,21 +46,48 @@
         <form method="get">
             <p class="smaller">*️⃣ Indicates a required field</p>
         
-            <label for="fullname" class="req">Name</label>
-            <input type="text" id="fullname" name="fullname" required placeholder="Please enter your full name">
+            <label for="username" class="req">Username</label>
+            <input type="text" id="username" name="username" required placeholder="Please enter your Username">
+            <label for="pwd">Your Password</label>
+            <input type="password" id="pwd" name="pwd" pattern="[a-zA-Z -]{6,}" required placeholder="At least six characters long. No numbers.">
+            <label for="pwd2">Re-enter Your Password</label>
+            <input type="password2" id="pwd2" name="pwd2">
             <label for="email" class="req">Email Address</label>
-            <input type="email" id="email" name="email" required placeholder="Please use your school email address">
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone">
-            <label for="keyphrase">Your Key Phrase</label>
-            <input type="text" id="keyphrase" name="keyphrase" pattern="[a-zA-Z -]{6,}" placeholder="At least six characters long. No numbers.">
-            <label for="keyphrase2">Re-enter Your Key Phrase</label>
-            <input type="text" id="keyphrase2" name="keyphrase2">
-        
-            <label for="comments" class="req">Your Message</label>
-            <textarea id="comments" name="comments" required></textarea>
-            <button id="btnSubmit" type="submit">Send Message</button>
-            <input type="hidden" value="43aster">
+            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" required placeholder="Please enter a valid email address">
+      
+            <label for="pagerating">Page Rating</label>
+            <input type="rating" id="pagerating" name="pagerating" placeholder="Please rate from 1 to 10 with 1 is the lowest">
+            <div class="star-rating">
+                <input type="radio" name="stars" id="star-a" value="10"/>
+                <label for="star-a"></label>
+          
+                <input type="radio" name="stars" id="star-b" value="9"/>
+                <label for="star-b"></label>
+            
+                <input type="radio" name="stars" id="star-c" value="8"/>
+                <label for="star-c"></label>
+            
+                <input type="radio" name="stars" id="star-d" value="7"/>
+                <label for="star-d"></label>
+            
+                <input type="radio" name="stars" id="star-e" value="6"/>
+                <label for="star-e"></label>
+
+                <input type="radio" name="stars" id="star-f" value="5"/>
+                <label for="star-a"></label>
+          
+                <input type="radio" name="stars" id="star-g" value="4"/>
+                <label for="star-b"></label>
+            
+                <input type="radio" name="stars" id="star-h" value="3"/>
+                <label for="star-c"></label>
+            
+                <input type="radio" name="stars" id="star-i" value="2"/>
+                <label for="star-d"></label>
+            
+                <input type="radio" name="stars" id="star-j" value="1"/>
+                <label for="star-e"></label>
+          </div>
         </form>
     </main>
 
