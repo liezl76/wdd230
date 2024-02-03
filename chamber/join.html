@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guimaras Chamber of Commerce</title>
+    <meta name="description" content="Guimaras Chamber of Commerce">
+    <meta name="author" content="[Liezl G. Lizardo]">
+    <meta property="og:title" content="Guimaras Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.hodgepodgelifestyle.com/wp-content/uploads/2022/08/81678253_10157100202723657_7925778690640707584_n.jpg">
+    <meta property="og:url" content="https://liezl76.github.io/wdd230/chamber">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div>
+            <img src="images/dark.svg" id="mode" alt="dark mode">
+        </div>
+        <div>
+            <img src="images/logo.png" alt="logo">
+            <h1>Guimaras Chamber of Commerce</h1>
+        </div>
+    </header>
+    <nav>
+        <button id="myButton">&#9776;</button>
+        <ul class="menuLinks">
+            <li class="current-menu-item"><a href="#">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="week01/chamber-site-plan.html">Directory</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <form action="thankyou.html" method="get" onsubmit="return validateForm()">
+                <label for="firstName">Applicant's First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+    
+                <label for="lastName">Applicant's Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+    
+                <label for="title">Applicant's Title/Position:</label>
+                <input type="text" id="title" name="title" pattern="[A-Za-z -]{7,}" title="Only alpha characters, hyphens, and spaces are allowed, minimum of seven characters">
+    
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="example@example.com">
+    
+                <label for="mobile">Mobile Phone Number:</label>
+                <input type="tel" id="mobile" name="mobile" required>
+    
+                <label for="organization">Business/Organization Name:</label>
+                <input type="text" id="organization" name="organization" required>
+    
+                <label for="membershipLevel">Membership Level:</label>
+                <select id="membershipLevel" name="membershipLevel">
+                    <option value="NP">NP Membership</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select>
+    
+                <label for="description">Business/Organization Description:</label>
+                <textarea id="description" name="description"></textarea>
+    
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+    
+                <input type="submit" value="Submit">
+
+                <!-- Membership level benefits displayed to the side -->
+                <div class="card">
+                    <h3>Membership Level Benefits</h3>
+                    <ul>
+                        <li>NP Membership: No fee</li>
+                        <li>Bronze Membership: ...</li>
+                        <li>Silver Membership: ...</li>
+                        <li>Gold Membership: ...</li>
+                    </ul>
+                </div>
+            </form>    
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p><img src="images/logo.png" alt="logo"> Guimaras Chamber of Commerce | </p>
+        <p>&#169; <span id="currentYear"></span> Liezl G. Lizardo | WDD 230 Project |  <img src="images/philippines.jpg" alt="Philippines Flag"></p>
+        <p id="lastModified"></p>
+    </footer>
+    <!-- JavaScript for dynamic content -->
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/formvalidation.js"></script>
+</body>
+</html>

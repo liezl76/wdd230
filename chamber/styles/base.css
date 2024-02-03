@@ -1,7 +1,7 @@
 * {
     margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -15,14 +15,14 @@ header {
     align-items: center;
     justify-content: center;
     background-color: #e76915;
-    padding: 5px;
+    padding: 20px; /* Increase padding for better spacing */
     margin: 1rem;
 }
 
 header img {
     width: 50px;
-	height: 50px;
-    top: -10px;
+    height: 50px;
+    margin-top: -10px; /* Use margin-top for positioning */
 }
 
 #mode {
@@ -41,7 +41,7 @@ h1 {
 }
 
 nav {
-	background-color: #e76915;
+    background-color: #e76915;
     margin: 1rem;
 }
 
@@ -57,49 +57,30 @@ nav {
     cursor: pointer;
     width: 100%;
     text-align: right;
-    padding: .25rem 2vw;
+    padding: .5rem 2vw; /* Adjust padding for better appearance */
 }
 
 ul.menuLinks li a {
     display: block;
-    padding: .75rem 2vw;
+    padding: 1rem 2vw; /* Adjust padding for better appearance */
     color: black;
     text-decoration: none;
 }
 
-/* li.current-menu-item a {
-    background-color: rgba(211, 200, 200, 0.2);
-} */
-
 ul.menuLinks {
-    display: none;
-    list-style-type: none;
-}
-
-nav ul {
-	list-style-type: none;
+    list-style-type: none; /* Remove default list styles */
 }
 
 nav a {
-	display: block;
-	color: #fff;
-	text-align: center;
-	padding: .5rem;
-	text-decoration: none;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: .5rem;
+    text-decoration: none;
 }
 
 nav a:hover {
-	background-color: rgb(255, 255, 255, 0.2);
-}
-
-#hero {
-    text-align: center;
-    padding: 20px;
-}
-
-#hero-img {
-    max-width: 100%;
-    height: auto;
+    background-color: rgba(255, 255, 255, 0.2); /* Use rgba for better transparency effect */
 }
 
 main {
@@ -108,15 +89,75 @@ main {
     padding: 20px;
 }
 
-.container, .container1 {
-    margin: 1rem 2vw;
+/* CSS for the form container */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* CSS for the form */
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+input[type="submit"] {
+    background-color: #e76915;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff9800; /* Hover color */
 }
 
 .card {
-    padding: 20px;
+    max-width: 300px; /* Adjust the maximum width of the benefits card */
+    margin-top: 20px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    background-color: #e76915;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card ul li {
+    margin-bottom: 8px;
 }
 
 footer {
@@ -128,15 +169,11 @@ footer {
 
 footer img {
     width: 20px;
-	height: 15px;
+    height: 15px;
 }
 
 .dark-mode header {
     background-color: #1a1a1a;
-}
-
-.dark-mode .img {
-    background-color: #fff;
 }
 
 .dark-mode body {
@@ -156,22 +193,14 @@ footer img {
     background-color: #1a1a1a;
 }
 
-.dark-mode h3 {
-    background-color: #333;
-    color: #fff;
-}
-
-.dark-mode h1 {
-    background-color: #333;
-    color: #fff;
-}
-
+.dark-mode h3,
+.dark-mode h1,
 .dark-mode footer {
-    background-color: #1a1a1a;
+    background-color: #333;
     color: #fff;
 }
 
-/*CSS for the open class */
+/* CSS for the open class */
 #myButton.open::before {
     content: "x";
 }
