@@ -10,7 +10,7 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://www.hodgepodgelifestyle.com/wp-content/uploads/2022/08/81678253_10157100202723657_7925778690640707584_n.jpg">
     <meta property="og:url" content="https://liezl76.github.io/wdd230/chamber">
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/join.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -33,10 +33,10 @@
     <nav>
         <button id="myButton">&#9776;</button>
         <ul class="menuLinks">
-            <li class="current-menu-item"><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
             <li><a href="week01/chamber-site-plan.html">Directory</a></li>
-            <li><a href="#">Join</a></li>
+            <li class="active"><a href="join.html">Join</a></li>
         </ul>
     </nav>
     <!-- Main Content -->
@@ -75,20 +75,21 @@
                 <input type="hidden" id="timestamp" name="timestamp" value="">
     
                 <input type="submit" value="Submit">
-
-                <!-- Membership level benefits displayed to the side -->
-                <div class="card">
-                    <h3>Membership Level Benefits</h3>
-                    <ul>
-                        <li>NP Membership: No fee</li>
-                        <li>Bronze Membership: ...</li>
-                        <li>Silver Membership: ...</li>
-                        <li>Gold Membership: ...</li>
-                    </ul>
-                </div>
-            </form>    
+            </form>
+    
+            <!-- Membership level benefits displayed to the side -->
+            <div class="card">
+                <h3>Membership Level Benefits</h3>
+                <ul>
+                    <li>NP Membership: No fee</li>
+                    <li>Bronze Membership: ...</li>
+                    <li>Silver Membership: ...</li>
+                    <li>Gold Membership: ...</li>
+                </ul>
+            </div>
         </div>
     </main>
+    
     <!-- Footer -->
     <footer>
         <p><img src="images/logo.png" alt="logo"> Guimaras Chamber of Commerce | </p>
