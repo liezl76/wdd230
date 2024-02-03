@@ -26,8 +26,13 @@ form {
 h1 {
 	margin: 20px;
 	font-size: 1.5rem;
+	color: antiquewhite;
 	color: var(--main-text-color-light);
 	text-indent: 10px;
+}
+
+.headname {
+	color: antiquewhite;
 }
 
 input,
@@ -76,7 +81,7 @@ button {
 }
 
 button:hover {
-	background-color: #ff751a;
+	background-color: #373736;
 }
 
 label {
