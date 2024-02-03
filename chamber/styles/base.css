@@ -67,9 +67,9 @@ ul.menuLinks li a {
     text-decoration: none;
 }
 
-li.current-menu-item a {
+/* li.current-menu-item a {
     background-color: rgba(211, 200, 200, 0.2);
-}
+} */
 
 ul.menuLinks {
     display: none;
