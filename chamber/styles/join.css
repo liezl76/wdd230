@@ -57,18 +57,18 @@ nav {
     cursor: pointer;
     width: 100%;
     text-align: right;
-    padding: .5rem 2vw; 
+    padding: .5rem 2vw; /* Adjust padding for better appearance */
 }
 
 ul.menuLinks li a {
     display: block;
-    padding: 1rem 2vw; 
+    padding: 1rem 2vw; /* Adjust padding for better appearance */
     color: black;
     text-decoration: none;
 }
 
 ul.menuLinks {
-    list-style-type: none; 
+    list-style-type: none; /* Remove default list styles */
 }
 
 nav a {
@@ -80,7 +80,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2); /* Use rgba for better transparency effect */
 }
 
 main {
@@ -89,42 +89,74 @@ main {
     padding: 20px;
 }
 
-/* Apply styles to the hero section */
-#hero {
-    text-align: center;
-    padding: 20px;
-}
-
-#hero-box {
-    max-width: 100%;
-    overflow: hidden;
-}
-
-#hero-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Apply styles to the card sections */
+/* CSS for the form container */
 .container {
-    max-width: 1200px;
-    margin: 20px auto;
+    max-width: 800px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-}
-
-.container1 {
-    max-width: 1200px;
-    margin: 20px auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.card {
-    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+}
+
+/* CSS for the form */
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+input[type="submit"] {
+    background-color: #e76915;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff9800; /* Hover color */
+}
+
+/* CSS for the benefits card */
+.card {
+    max-width: 300px; /* Adjust the maximum width of the benefits card */
+    margin-top: 20px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    background-color: #e76915;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card ul li {
+    margin-bottom: 8px;
 }
 
 footer {
