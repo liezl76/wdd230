@@ -63,7 +63,7 @@ nav {
 ul.menuLinks li a {
     display: block;
     padding: 1rem 2vw; /* Adjust padding for better appearance */
-    /* color: black; */
+    color: black;
     text-decoration: none;
 }
 
@@ -80,7 +80,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Use rgba for better transparency effect */
+    background-color: rgba(255, 255, 255, 0.2); 
 }
 
 /* Apply styles to the main container */
@@ -147,14 +147,14 @@ input[type="submit"]:hover {
     color: #333;
 }
 
-/* .card ul {
+.card ul {
     list-style-type: none;
     padding: 0;
 }
 
 .card li {
     margin-bottom: 8px;
-} */
+}
 
 footer {
     background-color: #e76915; /* Primary */
