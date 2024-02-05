@@ -1,0 +1,23 @@
+{
+    "familyName" : "Lizardo",
+    "datemoveIn" : "February 16, 2021",
+    "numberofrecords" : 3,
+    "visitedbyBishopric" : "Yes",
+    "members" : [
+      {
+        "name" : "Nelida",
+        "gender" : 69,
+        "birthdate" : "November 5, 1954"
+      },
+      {
+        "name" : "Liezl",
+        "gender" : 47,
+        "birthdate" : "November 6, 1976"
+      },
+      {
+        "name" : "Lorena",
+        "gender" : 46,
+        "birthdate" : "November 24, 1977"
+      }
+    ]
+  }
