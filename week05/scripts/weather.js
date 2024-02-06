@@ -7,7 +7,7 @@ const captionDesc = document.querySelector('figcaption');
 const url = 'https://api.openweathermap.org/data/2.5/weather';
 
 // Define the API key
-const apiKey = '[998fbd78ab14ba0ce1f98c993ab57a6f]';
+const apiKey = '998fbd78ab14ba0ce1f98c993ab57a6f';
 
 // Define the latitude and longitude of Trier, Germany
 const latitude = '49.75';
@@ -35,16 +35,17 @@ async function apiFetch() {
   }
 }
 
+// Call the apiFetch function to fetch data from the API
+apiFetch();
+
 // Function to display results in the HTML document
 function displayResults(data) {
   currentTemp.innerHTML = `${data.main.temp}&deg;F`; // Display current temperature
   const iconCode = data.weather[0].icon; // Get icon code
   const iconSrc = `https://openweathermap.org/img/w/${iconCode}.png`; // Construct icon URL
-  const desc = data.weather[0].description; // Get weather description
+  let desc = data.weather[0].description; // Get weather description
   weatherIcon.setAttribute('src', iconSrc); // Set weather icon source
   weatherIcon.setAttribute('alt', desc); // Set weather icon alt attribute
-  captionDesc.textContent = desc; // Display weather description
+  captionDesc.textContent = `${desc}`; // Display weather description
 }
 
-// Call the apiFetch function to fetch data from the API
-apiFetch();
