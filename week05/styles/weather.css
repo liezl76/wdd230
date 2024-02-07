@@ -1,69 +1,23 @@
-/* Reset default margin and padding */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Style for weather container */
-main {
-  text-align: center;
-  margin-top: 50px;
-}
-
-/* Style for current temperature */
-#current-temp {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #333;
-}
-
-/* Style for weather icon */
-#weather-icon {
-  width: 150px;
-  height: 150px;
-  margin-top: 20px;
-}
-
-/* Style for weather description */
-figcaption {
-  font-size: 1.2rem;
-  color: #666;
-}
-
-/* Style for footer */
-footer {
-  margin-top: 50px;
-  text-align: center;
-  font-size: 0.8rem;
-  color: #888;
-}
-
-/* Style for the page background */
-body {
-  background-color: #f3f3f3;
-  font-family: Arial, sans-serif;
-}
-
-/* Style for the main heading */
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-/* Style for the main content */
-main {
-  background-color: #fff;
-  padding: 20px;
+.card {
+  border: 1px solid #5dbf67;
+  background-color: #f6f0da;
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-/* Style for the footer */
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  border-radius: 0 0 10px 10px;
+.card h2 {
+  color: #3a5250;
+  margin: .3rem 0;
+}
+
+.card #description {
+  text-transform: capitalize;
+  color: #3a5250;
+  margin: .3rem 0;
+}
+
+.card #temperature {
+  font-size: 2rem;
+  color: #537279;
+  margin: .3rem 0;
 }

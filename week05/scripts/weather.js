@@ -1,6 +1,8 @@
 // select HTML elements in the document
-const currentTemp = document.querySelector('#current-temp');
-const weatherIcon = document.querySelector('#weather-icon');
+const myTown = document.querySelector('#town');
+const myDescription = document.querySelector('#description')
+const myTemperature = document.querySelector('#temperature');
+const myGraphic = document.querySelector('#graphic')
 const captionDesc = document.querySelector('figcaption');
 
 // Define the URL for the OpenWeatherMap API
@@ -17,7 +19,7 @@ const longitude = '6.64';
 const units = 'imperial';
 
 // Construct the URL with query parameters
-const apiUrl = `${url}?lat=${latitude}&lon=${longitude}&units=${units}&appid=${apiKey}`;
+const apiUrl = `//api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=${units}&appid=${apiKey}`;
 
 // Define an asynchronous function to fetch data from the API
 async function apiFetch() {
@@ -35,17 +37,15 @@ async function apiFetch() {
   }
 }
 
+// // Function to display results in the HTML document
+function displayResults(data) {
+  myDescription.innerHTML = data.weather[0].myDescription
+  myTemperature.innerHTML = `${data.main.temp}&deg;F`
+  const iconsrc = 'https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png'
+  myGraphic.setAttribute('src', iconsrc)
+  myGraphic.setAttribute('alt', data.weather[0].description)
+}
+
 // Call the apiFetch function to fetch data from the API
 apiFetch();
-
-// Function to display results in the HTML document
-function displayResults(data) {
-  currentTemp.innerHTML = `${data.main.temp}&deg;F`; // Display current temperature
-  const iconCode = data.weather[0].icon; // Get icon code
-  const iconSrc = `https://openweathermap.org/img/w/${iconCode}.png`; // Construct icon URL
-  let desc = data.weather[0].description; // Get weather description
-  weatherIcon.setAttribute('src', iconSrc); // Set weather icon source
-  weatherIcon.setAttribute('alt', desc); // Set weather icon alt attribute
-  captionDesc.textContent = `${desc}`; // Display weather description
-}
 
