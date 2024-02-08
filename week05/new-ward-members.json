@@ -1,7 +1,7 @@
 {
     "familyName" : "Lizardo",
     "datemoveIn" : "February 16, 2021",
-    "numberofrecords" : 3,
+    "numberofRecords" : 3,
     "visitedbyBishopric" : "Yes",
     "members" : [
       {
@@ -20,4 +20,4 @@
         "birthdate" : "November 24, 1977"
       }
     ]
-  }
+}
