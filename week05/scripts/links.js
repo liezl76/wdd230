@@ -1,0 +1,2 @@
+const baseURL = "";
+const linksURL = "";

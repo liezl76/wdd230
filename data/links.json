@@ -1,18 +1,91 @@
 {
-    "weeks": "Week 1",
-    "links": [
-        {
-            "url": "week01/holygrail.html",
-            "title": "HG Layout"
-        },
-        {
-            "url": "week01/media-query.html",
-            "title": "mQuerries"
-        },
-        {
-            "url": "week01/chamber-site-plan.html",
-            "title": "chamberSitePlan Layout"
-        }
+    "weeks" : [
+      {
+        "week" : "Week 1",
+        "links": [
+          {
+            "url":"week01/holygrail.html",
+            "title":"HG Layout"
+          },
+          {
+            "url":"week01/media-query.html",
+            "title":"Media Query"
+          },
+          {
+            "url":"https://codepen.io/iziel-1106/pen/poYyNMj",
+            "title":"JS Pen"
+          }
+        ]
+      },
+      {
+        "week" : "Week 2",
+        "links": [
+          {
+            "url":"week02/design.html",
+            "title":"Design Principles"
+          },
+          {
+            "url":"week02/bom.html",
+            "title":"Book of Mormon"
+          },
+          {
+            "url":"https://codepen.io/iziel-1106/pen/VwRpjNb",
+            "title":"JS Pen"
+          }
+        ]
+      },
+      {
+        "week" : "Week 3",
+        "links": [
+          {
+            "url":"week03/lazyload.html",
+            "title":"Native Lazy Loading"
+          },
+          {
+            "url":"week03/responsive-images.html",
+            "title":"Responsive Images"
+          },
+          {
+            "url":"week03/bom.html",
+            "title":"Book of Mormon"
+          }
+        ]
+      },
+      {
+        "week" : "Week 4",
+        "links": [
+          {
+            "url":"week04/tablebuild.html",
+            "title":"Table Build"
+          },
+          {
+            "url":"week04/images/cssExercise1.webp",
+            "title":"CSS Combinators"
+          },
+          {
+            "url":"https://codepen.io/iziel-1106/pen/NWJXyLz",
+            "title":"Pseudo-class Fun"
+          }
+        ]
+      },
+      {
+        "week" : "Week 5",
+        "links": [
+          {
+            "url":"week04/prophet.html",
+            "title":"Prophet"
+          },
+          {
+            "url":"week05/new-ward-members.json",
+            "title":"JSON"
+          },
+          {
+            "url":"https://codepen.io/iziel-1106/pen/YzgvXzO",
+            "title":"JS Pen"
+          }
+        ]
+      }
     ]
-    
 }
+
+
