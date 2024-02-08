@@ -38,7 +38,7 @@ async function apiFetch() {
 // Function to display results in the HTML document
 function displayResults(data) {
   currentTemp.innerHTML = `${data.main.temp}&deg;F`;
-  const iconsrc = 'https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png';
+  const iconsrc = 'https://openweathermap.org/img/wn/10d@2x.png';
   let desc = data.weather[0].description;
   weatherIcon.setAttribute('src', iconsrc);
   weatherIcon.setAttribute('alt', data.weather[0].description);
@@ -47,9 +47,6 @@ function displayResults(data) {
 
 // Call the apiFetch function to fetch data from the API
 apiFetch();
-
-
-
 
 // 1️⃣ Initialize display element variable
 const visitsDisplay = document.querySelector(".visits");
