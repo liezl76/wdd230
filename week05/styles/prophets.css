@@ -1,53 +1,105 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	font-size: 18px;
+	font-family: Roboto, Helvetica, sans-serif;
+	color: #fff;
 }
 
-header {
-  background-color: #4CAF50;
-  color: white;
+h1 {
+	border-bottom: 1px solid #000;
+	padding: 15px;
+	background-color:#08520c;
   text-align: center;
-  padding: 1rem;
 }
 
-main {
-  margin-left: 2rem;
-  width: auto;
-  max-height: auto;
+h2 {
+	padding: 0.5rem;
+  color: black;
 }
 
-.card {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+#emessage {
+	visibility: hidden;
+	margin: 1rem;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	font-size: 0.8rem;
+	background-color: indianred;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	border-bottom: 1px solid #bbb;
+}
+
+.cards {
+	margin-left: 1rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 1rem;
 }
 
 section {
-  margin: 0.25rem;
-  padding: 0.35rem;
-  background-color: #eee;
-  border: 1px solid #bbb;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	margin: 1rem;
+	padding: 1rem;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	background-color: rgb(249, 245, 250);
+	color: #fff;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
 }
 
-p {
-  margin-top: 0.5rem;
+.highlight {
+	color: navy;
 }
 
-img {
-  width: auto;
-	max-width: 325px;
-  box-shadow: 0 0 30px #777;
-  height: 200px;
-  border: 1px solid #333;
+section img {
+	width: 240px;
+	height: auto;
+	border: 1px solid #fff;
+	box-shadow: 0 0 20px #fff;
+	margin-top: 1rem;
+}
+
+input,
+select,
+textarea,
+button {
+	padding: 0.5rem;
+	margin: 0.5rem;
+}
+
+.stats {
+	margin: 0.5rem;
+	border: 1px solid #fff;
+	padding: 1rem;
+	background-color: #000;
+}
+
+.stats p {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 0.5rem;
+}
+
+.label {
+	text-align: right;
+	color: yellow;
 }
 
 footer {
-  background-color: #333;
+  background-color: #08520c;
   color: white;
+  padding: 5px;
   text-align: center;
-  padding: 1rem;
+  margin: 1rem;
 }
