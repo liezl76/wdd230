@@ -25,7 +25,6 @@ async function apiFetch() {
     const response = await fetch(apiUrl);
     if (response.ok) {
       const data = await response.json();
-      console.log(data); // testing only
       displayResults(data); // display results in HTML
     } else {
       throw Error(await response.text());
