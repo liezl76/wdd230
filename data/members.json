@@ -1,0 +1,67 @@
+{
+    "members": [
+      {
+        "name": "Company A",
+        "address": "123 Main Street",
+        "phone": "555-123-4567",
+        "website": "https://www.companya.com",
+        "image": "companya-logo.png",
+        "membership_level": "Gold",
+        "other_info": "Lorem ipsum dolor sit amet."
+      },
+      {
+        "name": "Company B",
+        "address": "456 Elm Avenue",
+        "phone": "555-987-6543",
+        "website": "https://www.companyb.com",
+        "image": "companyb-icon.png",
+        "membership_level": "Silver",
+        "other_info": "Consectetur adipiscing elit."
+      },
+      {
+        "name": "Company B",
+        "address": "456 Elm Avenue",
+        "phone": "555-987-6543",
+        "website": "https://www.companyb.com",
+        "image": "companyb-icon.png",
+        "membership_level": "Silver",
+        "other_info": "Consectetur adipiscing elit."
+      },
+      {
+        "name": "Company B",
+        "address": "456 Elm Avenue",
+        "phone": "555-987-6543",
+        "website": "https://www.companyb.com",
+        "image": "companyb-icon.png",
+        "membership_level": "Silver",
+        "other_info": "Consectetur adipiscing elit."
+      },
+      {
+        "name": "Company B",
+        "address": "456 Elm Avenue",
+        "phone": "555-987-6543",
+        "website": "https://www.companyb.com",
+        "image": "companyb-icon.png",
+        "membership_level": "Silver",
+        "other_info": "Consectetur adipiscing elit."
+      },
+      {
+        "name": "Company B",
+        "address": "456 Elm Avenue",
+        "phone": "555-987-6543",
+        "website": "https://www.companyb.com",
+        "image": "companyb-icon.png",
+        "membership_level": "Silver",
+        "other_info": "Consectetur adipiscing elit."
+      },
+      {
+        "name": "Company B",
+        "address": "456 Elm Avenue",
+        "phone": "555-987-6543",
+        "website": "https://www.companyb.com",
+        "image": "companyb-icon.png",
+        "membership_level": "Silver",
+        "other_info": "Consectetur adipiscing elit."
+      }
+    ]
+}
