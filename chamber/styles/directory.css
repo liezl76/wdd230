@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #e76915;
+    padding: 20px; /* Increase padding for better spacing */
+    margin: 1rem;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    margin-top: -10px; /* Use margin-top for positioning */
+}
+
+#mode {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 28px;
+    cursor: pointer;
+}
+
+h1 {
+    display: inline-block;
+    color: black;
+    position: relative;
+    top: -10px;
+}
+
+nav {
+    background-color: #e76915;
+    margin: 1rem;
+}
+
+#myButton::before {
+    content: "=";
+}
+
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .5rem 2vw; 
+}
+
+ul.menuLinks li a {
+    display: block;
+    padding: 1rem 2vw; 
+    color: black;
+    text-decoration: none;
+}
+
+ul.menuLinks {
+    list-style-type: none; 
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: .5rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.menu {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #bed;
+	text-align: center;
+}
+
+.menu button {
+	padding: 1rem;
+	font-weight: 700;
+}
+
+section {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #eee;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 5px;
+	align-items: center;
+}
+
+.grid section {
+	text-align: center;
+}
+
+.grid img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+}
+
+.grid section > * {
+	margin: 0.1rem;
+}
+
+.grid h3 {
+	font-family: "Caveat", cursive;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; /* smaller viewports only */
+}
+
+.list section h3 {
+	font-size: 1rem;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list section:nth-child(even) {
+	background-color: #bed;
+}
+
+section h3 {
+	font-size: 1.5rem;
+}
+
+section p {
+	font-weight: 600;
+	font-size: smaller;
+}
+
+section a {
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 0.85rem;
+	color: navy;
+	letter-spacing: 1.1pt;
+}
+
+img {
+	height: 75px;
+	max-width: 100%; /* Images are jerks - Seattle*/
+}
+
+footer {
+    background-color: #e76915; /* Primary */
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+footer img {
+    width: 20px;
+    height: 15px;
+}
+
+.dark-mode header {
+    background-color: #1a1a1a;
+}
+
+.dark-mode body {
+    color: #fff;
+}
+
+.dark-mode nav {
+    background-color: #333;
+}
+
+.dark-mode ul.menuLinks li a {
+    color: #fff;
+}
+
+.dark-mode .card {
+    border-color: #fff;
+    background-color: #1a1a1a;
+}
+
+.dark-mode h3,
+.dark-mode h1,
+.dark-mode footer {
+    background-color: #333;
+    color: #fff;
+}
+
+/* CSS for the open class */
+#myButton.open::before {
+    content: "x";
+}
+
+ul.open.menuLinks {
+    display: block;
+}
