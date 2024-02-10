@@ -1,0 +1,67 @@
+{
+    "members": [
+      {
+        "name": "LGU Province of Guimaras",
+        "address": "San Miguel, Jordan, Guimaras",
+        "phone": "+639983693844",
+        "website": "https://guimaras.gov.ph",
+        "image": "chamber/images/guimaras-logo.webp", 
+        "membership_level": "Gold",
+        "other_info": "Lorem ipsum dolor sit amet."
+      },
+      {
+        "name": "Guimaras State Univeristy",
+        "address": "San Miguel, Jordan, Guimaras",
+        "phone": "(033)580-8244",
+        "website": "https://www.discoverguimarasph.com",
+        "image": "chamber/images/guimaras-logo.webp",
+        "membership_level": "Silver",
+        "other_info": "Consectetur adipiscing elit."
+      },
+      {
+        "name": "Guimaras Specialist Medical Center, Inc.",
+        "address": "San Miguel, Jordan, Guimaras",
+        "phone": "+639209464217",
+        "website": "https://www.facebook.com/gsmciguimaras/",
+        "image": "chamber/images/guimaras-logo.webp",
+        "membership_level": "Silver",
+        "other_info": "Consectetur adipiscing elit."
+      },
+      {
+        "name": "LGU Municipality of Jordan",
+        "address": "Poblacion, Jordan, Guimaras",
+        "phone": "555-987-6543",
+        "website": "https://jordan.gov.ph",
+        "image": "chamber/images/guimaras-logo.webp",
+        "membership_level": "Silver",
+        "other_info": "Consectetur adipiscing elit."
+      },
+      {
+        "name": "LGU Municipality of Buenavista",
+        "address": "Mclain, Buenavista, Guimars",
+        "phone": "+639190756742",
+        "website": "http://buenavistaguimaras.gov.ph",
+        "image": "chamber/images/guimaras-logo.webp",
+        "membership_level": "Silver",
+        "other_info": "Consectetur adipiscing elit."
+      },
+      {
+        "name": "LGU Municipality of Nueva Valencia",
+        "address": "Poblacion, Nueva Valencia, Guimaras",
+        "phone": "(033)582-1260",
+        "website": "https://nuevavalencia.gov.ph",
+        "image": "chamber/images/nvguimaraslogo.webp",
+        "membership_level": "Silver",
+        "other_info": "Consectetur adipiscing elit."
+      },
+      {
+        "name": "LGU Municipality of San Lorenzo",
+        "address": "Cabano, San Lorenzo, Guimaras",
+        "phone": "+639499979094",
+        "website": "https://www.sanlorenzoguimaras.gov.ph/",
+        "image": "companyb-icon.png",
+        "membership_level": "Silver",
+        "other_info": "Consectetur adipiscing elit."
+      }
+    ]
+}
