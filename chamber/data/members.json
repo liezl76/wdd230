@@ -5,7 +5,7 @@
         "address": "San Miguel, Jordan, Guimaras",
         "phone": "+639983693844",
         "website": "https://guimaras.gov.ph",
-        "image": "chamber/images/guimaras-logo.webp", 
+        "image": "images/guimaraslogo.png", 
         "membership_level": "Gold",
         "other_info": "Lorem ipsum dolor sit amet."
       },
@@ -14,7 +14,7 @@
         "address": "San Miguel, Jordan, Guimaras",
         "phone": "(033)580-8244",
         "website": "https://www.discoverguimarasph.com",
-        "image": "chamber/images/guimaras-logo.webp",
+        "image": "images/gsulogo.png",
         "membership_level": "Silver",
         "other_info": "Consectetur adipiscing elit."
       },
@@ -23,7 +23,7 @@
         "address": "San Miguel, Jordan, Guimaras",
         "phone": "+639209464217",
         "website": "https://www.facebook.com/gsmciguimaras/",
-        "image": "chamber/images/guimaras-logo.webp",
+        "image": "images/gsmci.png",
         "membership_level": "Silver",
         "other_info": "Consectetur adipiscing elit."
       },
@@ -32,7 +32,7 @@
         "address": "Poblacion, Jordan, Guimaras",
         "phone": "555-987-6543",
         "website": "https://jordan.gov.ph",
-        "image": "chamber/images/guimaras-logo.webp",
+        "image": "images/jordan.jpeg",
         "membership_level": "Silver",
         "other_info": "Consectetur adipiscing elit."
       },
@@ -41,7 +41,7 @@
         "address": "Mclain, Buenavista, Guimars",
         "phone": "+639190756742",
         "website": "http://buenavistaguimaras.gov.ph",
-        "image": "chamber/images/guimaras-logo.webp",
+        "image": "images/buenavista.jpeg",
         "membership_level": "Silver",
         "other_info": "Consectetur adipiscing elit."
       },
@@ -50,7 +50,7 @@
         "address": "Poblacion, Nueva Valencia, Guimaras",
         "phone": "(033)582-1260",
         "website": "https://nuevavalencia.gov.ph",
-        "image": "chamber/images/nvguimaraslogo.webp",
+        "image": "images/nueva.png",
         "membership_level": "Silver",
         "other_info": "Consectetur adipiscing elit."
       },
@@ -59,7 +59,7 @@
         "address": "Cabano, San Lorenzo, Guimaras",
         "phone": "+639499979094",
         "website": "https://www.sanlorenzoguimaras.gov.ph/",
-        "image": "companyb-icon.png",
+        "image": "images/sanlorenzo.png",
         "membership_level": "Silver",
         "other_info": "Consectetur adipiscing elit."
       }
