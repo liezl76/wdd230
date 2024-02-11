@@ -91,49 +91,80 @@ main {
 
 /* Grid view styles */
 .members-grid {
+    list-style: none;
+    padding: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns always */
+    grid-gap: 1rem;
 }
-  
+
 .member-item {
     border: 1px solid #ccc;
     padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px; /* Rounded corners for card appearance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for card */
 }
-  
+
+.member-item h2 {
+    margin-top: 0;
+}
+
+.member-item p {
+    margin: 5px 0;
+}
+
+.member-item a {
+    text-decoration: none;
+    color: blue;
+}
+
+.member-item a:hover {
+    text-decoration: underline;
+}
+
 .member-item img {
-    max-width: 100px;
+    width: 150px; /* Adjusted image width to fit card */
     height: auto;
+    border-radius: 6px; /* Rounded corners for image */
 }
   
 /* List view styles */
 .list-container {
     list-style: none;
     padding: 0;
+    display: grid; /* Change to grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust column width */
+    grid-gap: 1rem;
 }
-  
+
 .list-container li {
     border-bottom: 1px solid #ccc;
     padding: 20px;
+    background-color: #f9f9f9; /* Zebra striping background color */
+}
+
+.list-container li:nth-child(even) {
+    background-color: #fff; /* Alternate background color for zebra striping */
 }
 
 .list-container li:last-child {
     border-bottom: none;
 }
-  
+
 .list-container h2 {
     margin-top: 0;
 }
-  
+
 .list-container p {
     margin: 5px 0;
 }
-  
+
 .list-container a {
     text-decoration: none;
     color: blue;
 }
-  
+
 .list-container a:hover {
     text-decoration: underline;
 }
