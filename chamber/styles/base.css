@@ -80,7 +80,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 254, 254, 0.2);
 }
 
 main {
@@ -163,7 +163,7 @@ footer img {
 .dark-mode h3,
 .dark-mode h1,
 .dark-mode footer {
-    background-color: #333;
+    background-color: #fcf8f8;
     color: #fff;
 }
 
