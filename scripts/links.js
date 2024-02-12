@@ -3,7 +3,7 @@ const baseURL = "https://github.com/liezl76/wdd230/";
 
 // Asynchronous function to get the links data
 async function getLinks() {
-    const linksURL = "https://github.com/liezl76/wdd230/raw/main/data/links.json"; // Update the URL to the raw JSON file
+    const linksURL = "https://github.com/liezl76/wdd230/blob/main/data/links.json"; // Update the URL to the raw JSON file
     try {
         const response = await fetch(linksURL);
         const data = await response.json();
