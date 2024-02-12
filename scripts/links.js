@@ -1,6 +1,6 @@
 // Define baseURL and linksURL
-const baseURL = ""; // Update with your base URL if necessary
-const linksURL = "links.json"; // Update the file path if necessary
+const baseURL = "https://github.com/liezl76/wdd230/"; // Update with your base URL if necessary
+const linksURL = "https://raw.githubusercontent.com/liezl76/wdd230/main/data/links.json"; // Update the file path if necessary
 
 // Asynchronous function to get the links data
 async function getLinks() {
