@@ -1,9 +1,9 @@
-// Define baseURL and linksURL
+// Define baseURL
 const baseURL = "https://github.com/liezl76/wdd230/";
-const linksURL = "https://github.com/liezl76/wdd230/blob/main/data/links.json";
 
 // Asynchronous function to get the links data
 async function getLinks() {
+    const linksURL = "https://github.com/liezl76/wdd230/raw/main/data/links.json"; // Update the URL to the raw JSON file
     try {
         const response = await fetch(linksURL);
         const data = await response.json();
@@ -28,7 +28,7 @@ function displayLinks(weeks) {
         week.links.forEach(link => {
             const listItem = document.createElement('li');
             const anchor = document.createElement('a');
-            anchor.href = baseURL + link.url;
+            anchor.href = link.url.startsWith('http') ? link.url : baseURL + link.url; // Check if the URL is absolute or relative
             anchor.textContent = link.title;
             listItem.appendChild(anchor);
             activityList.appendChild(listItem);
