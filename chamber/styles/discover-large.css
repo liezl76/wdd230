@@ -1,9 +1,21 @@
-@media screen and (max-width: 768px) {
-    .container {
-        grid-template-columns: 1fr;
-    }
+@media (min-width: 600px) {
+	nav ul {
+		display: flex;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+	}
 
-    .sidebar {
-        grid-column: 1 / -1;
-    }
+	#myButton {
+		display: none;
+	}
+
+	ul.menuLinks, ul.menuLinks.open {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	ul.menuLinks a:hover {
+		background-color: rgba(255, 255, 255, 0.2);
+	}
 }

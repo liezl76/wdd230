@@ -89,12 +89,16 @@ main {
     padding: 20px;
 }
 
+button#grid, button#list {
+    margin-bottom: 10px;
+}
+
 /* Grid view styles */
-.members-grid {
+div#members {
     list-style: none;
     padding: 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns always */
+    display: grid; /* Change to grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust column width */
     grid-gap: 1rem;
 }
 
@@ -104,6 +108,7 @@ main {
     background-color: #f9f9f9;
     border-radius: 8px; /* Rounded corners for card appearance */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for card */
+    text-align: center;
 }
 
 .member-item h2 {
