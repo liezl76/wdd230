@@ -122,8 +122,8 @@ textarea {
 }
 
 input[type="submit"] {
-    background-color: #e76915;
-    color: #fff;
+    background-color: #f5680a;
+    color: black;
     cursor: pointer;
     padding: 10px 15px;
     border: none;
@@ -132,7 +132,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #ff9800;
+    background-color: #eec281;
 }
 
 /* Apply styles to the membership level benefits container */
@@ -157,7 +157,7 @@ input[type="submit"]:hover {
 }
 
 footer {
-    background-color: #e76915; /* Primary */
+    background-color: #e46612; /* Primary */
     color: black;
     padding: 10px;
     text-align: center;
