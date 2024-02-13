@@ -30,7 +30,7 @@ function displayLinks(weeks) {
         ul.appendChild(listItem);
     });
 
-    const sectionHeader = document.createElement('h2');
+    const sectionHeader = document.createElement('h3');
     sectionHeader.textContent = 'Learning Activities';
     learningActivities.appendChild(sectionHeader);
     learningActivities.appendChild(ul);
