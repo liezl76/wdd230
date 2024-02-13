@@ -113,6 +113,11 @@ nav a:hover {
     text-align: center;
 }
 
+h2 {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
 .container {
     margin: 1rem 2vw;
 }
