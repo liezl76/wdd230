@@ -112,19 +112,13 @@ nav a:hover {
     padding: 20px;
     text-align: justify;
     text-indent: 20px;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     line-height: 3;
     font-size: 14px;
 }
 
-.container {
-    overflow: auto;
-    white-space: nowrap;
-    padding: 10px;
-}
-  
 .container img {
-    width: 100%;
+    width: 75%;
     height: auto;
     padding: 10px;
     aspect-ratio: 3/2;
