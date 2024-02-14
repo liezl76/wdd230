@@ -93,9 +93,9 @@ nav a:hover {
 
 .main-container {
     display: grid;
-    grid-template-columns: 400px 1fr;
-    gap: 30px;
-    padding: 30px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
 }
 
 .sidebar {
@@ -105,27 +105,9 @@ nav a:hover {
     flex-direction: column;
 }
 
-.picture {
-    width: 100%;
-    background: #000;
-    animation: fade 15s;
-}
-
-@keyframes fade {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.sidebar.scrolled .picture {
-    opacity: 1;
-}
-
 .main-content {
+    display: grid;
+    grid-template-columns: 1fr;
     background-color: #faf5f5;
     padding: 20px;
     text-align: justify;
@@ -142,7 +124,7 @@ nav a:hover {
 }
   
 .container img {
-    width: 30%;
+    width: 100%;
     height: auto;
     padding: 10px;
     aspect-ratio: 3/2;
