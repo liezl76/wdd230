@@ -135,13 +135,13 @@ nav a:hover {
     font-size: 14px;
 }
 
-.scroll-container {
+.container {
     overflow: auto;
     white-space: nowrap;
     padding: 10px;
 }
   
-.scroll-container img {
+.container img {
     width: 30%;
     height: auto;
     padding: 10px;
@@ -150,7 +150,7 @@ nav a:hover {
     transition: transform 0.3s ease-in-out;
 }
 
-.scroll-container img:hover {
+.container img:hover {
     transform: scale(1.1);
 }
 
