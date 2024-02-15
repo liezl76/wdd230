@@ -17,4 +17,51 @@ numVisits++;
 // 5️⃣ store the new visit total into localStorage, key=numVisits-ls
 localStorage.setItem("numVisits-ls", numVisits);
 
-// 💡A client can view the localStorage data using the Applications panel in the browsers's DevTools - check it out on any major site.
+// Function to fetch weather data
+function getWeatherData() {
+    const apiKey = '998fbd78ab14ba0ce1f98c993ab57a6f';
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Guimaras&appid=${apiKey}&units=metric`;
+    
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            const currentTemperature = data.main.temp;
+            const weatherDescription = data.weather[0].description;
+            // Update HTML to display current temperature and weather description
+            document.getElementById('currentTemperature').textContent = `Temperature: ${currentTemperature}°C`;
+            document.getElementById('weatherDescription').textContent = `Description: ${weatherDescription}`;
+        })
+        .catch(error => console.log(error));
+}
+
+// Function to check if today is Monday, Tuesday, or Wednesday and if it's between 7 AM and 7 PM
+function isBannerDay() {
+    const today = new Date();
+    const dayOfWeek = today.getDay(); // 0=Sunday, 1=Monday, ..., 6=Saturday
+    const currentHour = today.getHours();
+
+    // Check if it's Monday, Tuesday, or Wednesday and if it's between 7 AM and 7 PM
+    return (dayOfWeek >= 1 && dayOfWeek <= 3) && (currentHour >= 7 && currentHour < 19);
+}
+
+// Function to display banner
+function displayBanner() {
+    const banner = document.getElementById('spotlightBanner');
+    if (isBannerDay()) {
+        banner.style.display = 'block';
+    }
+}
+
+// Function to close banner
+function closeBanner() {
+    const banner = document.getElementById('spotlightBanner');
+    banner.style.display = 'none';
+}
+
+// Event listener for closing the banner
+document.getElementById('closeSpotlightBanner').addEventListener('click', closeBanner);
+
+// Call functions to fetch weather data, display spotlight ads, and display banner
+getWeatherData();
+displaySpotlightAds();
+displayBanner();
