@@ -1,4 +1,4 @@
-/// Define baseURL and membersURL
+// Define baseURL and membersURL
 const baseURL = "https://liezl76.github.io/wdd230/"; 
 const membersURL = "https://raw.githubusercontent.com/liezl76/wdd230/main/data/members.json";
 
@@ -18,9 +18,13 @@ async function getMembers() {
 
 // Function to display random spotlight ads for silver or gold members
 function displayRandomSpotlightAds(members) {
-    const spotlightContainer = document.querySelector('.spotlight-container');
-    const spotlightAdsSection = spotlightContainer.querySelector('.card');
-    const spotlightAdsList = document.createElement('ul');
+    const spotlightAdsSection = document.querySelector('.spotlight-container .card');
+    spotlightAdsSection.innerHTML = ''; // Clear existing content
+
+    // Create an h3 element for the "Spotlight Ads" section
+    const sectionHeader = document.createElement('h3');
+    sectionHeader.textContent = 'Spotlight Ads';
+    spotlightAdsSection.appendChild(sectionHeader);
 
     // Filter members with silver or gold membership levels
     const qualifiedMembers = members.filter(member => member.membership_level === 'Silver' || member.membership_level === 'Gold');
@@ -36,17 +40,19 @@ function displayRandomSpotlightAds(members) {
         adItem.innerHTML = `
             <h3>${member.name}</h3>
             <p>Address: ${member.address}</p>
-            <p>Phone: ${member.phone}</p>
-            <p>Website: <a href="${member.website}" target="_blank">${member.website}</a></p>
-            <img src="${baseURL + member.image}" alt="${member.name} Image">
-            <p>Membership Level: ${member.membership_level}</p>
-            <p>${member.other_info}</p>
         `;
-        spotlightAdsList.appendChild(adItem);
+        spotlightAdsSection.appendChild(adItem);
     });
 
-    // Append the list of spotlight ads to the spotlight ads section
-    spotlightAdsSection.appendChild(spotlightAdsList);
+    // Show the spotlight banner
+    const spotlightBanner = document.getElementById('spotlightBanner');
+    spotlightBanner.style.display = 'block';
+
+    // Add event listener to close the spotlight banner
+    const closeSpotlightBannerButton = document.getElementById('closeSpotlightBanner');
+    closeSpotlightBannerButton.addEventListener('click', () => {
+        spotlightBanner.style.display = 'none';
+    });
 }
 
 // Function to shuffle an array (Fisher-Yates algorithm)
