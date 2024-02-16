@@ -1,95 +1,61 @@
-// Fetches weather data from OpenWeatherMap API
-async function getWeatherData() {
-    try {
-        const apiKey = '998fbd78ab14ba0ce1f98c993ab57a6f';
-        const latitude = '10.54701';
-        const longitude = '122.58772';
-        const units = 'metric';
-        const apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&units=${units}&exclude=minutely,hourly&appid=${apiKey}`;
+/// Define baseURL and membersURL
+const baseURL = "https://liezl76.github.io/wdd230/"; 
+const membersURL = "https://raw.githubusercontent.com/liezl76/wdd230/main/data/members.json";
 
-        const response = await fetch(apiUrl);
+// Asynchronous function to get the members data
+async function getMembers() {
+    try {
+        const response = await fetch(membersURL);
         if (!response.ok) {
-            throw new Error('Network response was not ok');
+            throw new Error('Failed to fetch members data');
         }
         const data = await response.json();
-
-        // Current weather
-        const currentTemp = data.current.temp;
-        const weatherDesc = data.current.weather[0].description;
-        const currentTempElement = document.querySelector('#current-temp');
-        const weatherDescElement = document.querySelector('#weather-description');
-        currentTempElement.textContent = `${currentTemp}°C`;
-        weatherDescElement.textContent = weatherDesc;
-
-        // Three day forecast
-        const forecastContainer = document.querySelector('#forecast');
-        forecastContainer.innerHTML = '';
-        for (let i = 1; i <= 3; i++) {
-            const forecast = data.daily[i];
-            const date = new Date(forecast.dt * 1000);
-            const day = date.toLocaleDateString('en-US', { weekday: 'short' });
-            const temp = `${forecast.temp.day}°C`;
-            const iconUrl = `https://openweathermap.org/img/wn/${forecast.weather[0].icon}.png`;
-
-            const forecastElement = document.createElement('div');
-            forecastElement.classList.add('forecast-item');
-            forecastElement.innerHTML = `
-                <p>${day}</p>
-                <img src="${iconUrl}" alt="${forecast.weather[0].description}">
-                <p>${temp}</p>
-            `;
-            forecastContainer.appendChild(forecastElement);
-        }
+        displayRandomSpotlightAds(data.members);
     } catch (error) {
-        console.error('Error fetching weather data:', error);
+        console.error('Error fetching members data:', error);
     }
 }
 
-// Displays spotlight advertisements
-function displaySpotlightAds() {
-    fetch('members.json')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .then(data => {
-            const spotlightMembers = data.members.filter(member => member.membership_level === 'silver' || member.membership_level === 'gold');
-            const randomMembers = getRandomMembers(spotlightMembers, 2); // Change 2 to the number of members you want to display
-            randomMembers.forEach(member => {
-                // Display member as spotlight ad
-            });
-        })
-        .catch(error => console.error('Error fetching member data:', error));
+// Function to display random spotlight ads for silver or gold members
+function displayRandomSpotlightAds(members) {
+    const spotlightContainer = document.querySelector('.spotlight-container');
+    const spotlightAdsSection = spotlightContainer.querySelector('.card');
+    const spotlightAdsList = document.createElement('ul');
+
+    // Filter members with silver or gold membership levels
+    const qualifiedMembers = members.filter(member => member.membership_level === 'Silver' || member.membership_level === 'Gold');
+
+    // Shuffle the qualified members array to randomize
+    shuffleArray(qualifiedMembers);
+
+    // Select two to three random members
+    const selectedMembers = qualifiedMembers.slice(0, Math.min(qualifiedMembers.length, 3));
+
+    selectedMembers.forEach(member => {
+        const adItem = document.createElement('li');
+        adItem.innerHTML = `
+            <h3>${member.name}</h3>
+            <p>Address: ${member.address}</p>
+            <p>Phone: ${member.phone}</p>
+            <p>Website: <a href="${member.website}" target="_blank">${member.website}</a></p>
+            <img src="${baseURL + member.image}" alt="${member.name} Image">
+            <p>Membership Level: ${member.membership_level}</p>
+            <p>${member.other_info}</p>
+        `;
+        spotlightAdsList.appendChild(adItem);
+    });
+
+    // Append the list of spotlight ads to the spotlight ads section
+    spotlightAdsSection.appendChild(spotlightAdsList);
 }
 
-// Function to get random members from an array
-function getRandomMembers(array, count) {
-    const shuffled = array.sort(() => 0.5 - Math.random());
-    return shuffled.slice(0, count);
-}
-
-// Displays or hides the banner based on the current day and time
-function displayBanner() {
-    const banner = document.getElementById('spotlightBanner');
-    const today = new Date();
-    const dayOfWeek = today.getDay(); // 0=Sunday, 1=Monday, ..., 6=Saturday
-    const currentHour = today.getHours();
-
-    if ((dayOfWeek >= 1 && dayOfWeek <= 3) && (currentHour >= 7 && currentHour < 19)) {
-        banner.style.display = 'block';
-    } else {
-        banner.style.display = 'none';
+// Function to shuffle an array (Fisher-Yates algorithm)
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
     }
 }
 
-// Event listener for closing the banner
-document.getElementById('closeSpotlightBanner').addEventListener('click', () => {
-    document.getElementById('spotlightBanner').style.display = 'none';
-});
-
-// Call functions to fetch weather data, display spotlight ads, and display banner
-getWeatherData();
-displaySpotlightAds();
-displayBanner();
+// Call function to fetch and display members data
+getMembers();
