@@ -12,7 +12,7 @@
 		column-gap: 10px;
 	}
 
-	.container1 {
+	.spotlight-container {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		column-gap: 10px;
