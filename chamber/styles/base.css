@@ -106,34 +106,10 @@ main {
 }
 
 /* Apply styles to the card sections */
-.container {
-    max-width: 1200px;
-    margin: 20px auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.container1 {
-    max-width: 1200px;
-    margin: 20px auto;
-    display: flex;
-    flex: 1 0 0;
-}
-
-/* .card {
-    background-color: #fff;
-    padding: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px;
-}
-
 .card {
     background-color: #f0f0f0;
+    margin-top: 20px;
     border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
-    max-width: 400px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .forecast-container {
@@ -142,12 +118,29 @@ main {
     overflow-x: auto;
 }
 
+h2 {
+    margin-top: 10px;
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .forecast-item {
     text-align: center;
-} */
+}
+
+div#spotlightBanner {
+    margin-top: 20px;
+}
+
+button#closeSpotlightBanner {
+    margin-top: 10px;
+}
 
 footer {
-    background-color: #e76915; /* Primary */
+    background-color: #e76915; /*Primary */
     color: black;
     padding: 10px;
     text-align: center;
