@@ -1,7 +1,7 @@
 // Fetches weather data from OpenWeatherMap API
 async function getWeatherData() {
     try {
-        const apiKey = '998fbd78ab14ba0ce1f98c993ab57a6f';
+        const apiKey = "998fbd78ab14ba0ce1f98c993ab57a6f";
         const latitude = '10.54701';
         const longitude = '122.58772';
         const units = 'metric';
@@ -15,11 +15,8 @@ async function getWeatherData() {
 
         // Current weather
         const currentTemp = data.current.temp;
-        const weatherDesc = data.current.weather[0].description;
         const currentTempElement = document.querySelector('#current-temp');
-        const weatherDescElement = document.querySelector('#weather-description');
         currentTempElement.textContent = `${currentTemp}°C`;
-        weatherDescElement.textContent = weatherDesc;
 
         // Three day forecast
         const forecastContainer = document.querySelector('#forecast');
@@ -29,14 +26,15 @@ async function getWeatherData() {
             const date = new Date(forecast.dt * 1000);
             const day = date.toLocaleDateString('en-US', { weekday: 'short' });
             const temp = `${forecast.temp.day}°C`;
-            const iconUrl = `https://openweathermap.org/img/wn/${forecast.weather[0].icon}.png`;
+            const iconCode = forecast.weather[0].icon; // Get the icon code
+            const iconUrl = `https://openweathermap.org/img/wn/${iconCode}.png`; // Construct the icon URL
 
             const forecastElement = document.createElement('div');
-            forecastElement.classList.add('forecast-item');
+            forecastElement.classList.add('col'); // Add this line to style forecast items in columns
             forecastElement.innerHTML = `
                 <p>${day}</p>
-                <img src="${iconUrl}" alt="${forecast.weather[0].description}">
-                <p>${temp}</p>
+                <img src="${iconUrl}" alt="${forecast.weather[0].description}" class="weather-icon">
+                <h1 class="temp">${temp}</h1>
             `;
             forecastContainer.appendChild(forecastElement);
         }
@@ -45,5 +43,5 @@ async function getWeatherData() {
     }
 }
 
-// Call functions to fetch weather data
+// Call function to fetch weather data
 getWeatherData();
