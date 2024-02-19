@@ -1,4 +1,4 @@
-// Displays or hides the banner based on the current day and time
+// Function to display or hide the banner based on the current day and time
 function displayBanner() {
     const banner = document.getElementById('spotlightBanner');
     const today = new Date();
@@ -17,5 +17,5 @@ document.getElementById('closeSpotlightBanner').addEventListener('click', () => 
     document.getElementById('spotlightBanner').style.display = 'none';
 });
 
-// Call functions to fetch display banner
+// Call the function to display or hide the banner
 displayBanner();

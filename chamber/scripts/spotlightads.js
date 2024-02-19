@@ -18,31 +18,42 @@ async function getMembers() {
 
 // Function to display random spotlight ads for silver or gold members
 function displayRandomSpotlightAds(members) {
-    const spotlightAdsSection = document.querySelector('.spotlight-container .card');
-    spotlightAdsSection.innerHTML = ''; // Clear existing content
+    const spotlightContainer = document.querySelector('.spotlight-container');
+    spotlightContainer.innerHTML = ''; // Clear existing content
 
-    // Create an h3 element for the "Spotlight Ads" section
-    const sectionHeader = document.createElement('h3');
-    sectionHeader.textContent = 'Spotlight Ads';
-    spotlightAdsSection.appendChild(sectionHeader);
+    // Shuffle the members array to randomize
+    shuffleArray(members);
 
-    // Filter members with silver or gold membership levels
-    const qualifiedMembers = members.filter(member => member.membership_level === 'Silver' || member.membership_level === 'Gold');
+    // Determine the number of spotlight sections (2 to 3)
+    const numberOfSections = Math.floor(Math.random() * 2) + 2;
 
-    // Shuffle the qualified members array to randomize
-    shuffleArray(qualifiedMembers);
+    // Determine the number of members to display in each section
+    const membersPerSection = Math.ceil(members.length / numberOfSections);
 
-    // Select two to three random members
-    const selectedMembers = qualifiedMembers.slice(0, Math.min(qualifiedMembers.length, 3));
+    // Display spotlight sections
+    for (let i = 0; i < numberOfSections; i++) {
+        const section = document.createElement('section');
+        section.classList.add('card');
+        const sectionHeader = document.createElement('h3');
+        sectionHeader.textContent = 'Spotlight Ads';
+        section.appendChild(sectionHeader);
 
-    selectedMembers.forEach(member => {
-        const adItem = document.createElement('li');
-        adItem.innerHTML = `
-            <h3>${member.name}</h3>
-            <p>Address: ${member.address}</p>
-        `;
-        spotlightAdsSection.appendChild(adItem);
-    });
+        // Select members for this section
+        const sectionMembers = members.slice(i * membersPerSection, (i + 1) * membersPerSection);
+
+        // Display selected members
+        sectionMembers.forEach(member => {
+            const adItem = document.createElement('li');
+            adItem.innerHTML = `
+                <h3>${member.name}</h3>
+                <p>Address: ${member.address}</p>
+            `;
+            section.appendChild(adItem);
+        });
+
+        // Append section to the spotlight container
+        spotlightContainer.appendChild(section);
+    }
 
     // Show the spotlight banner
     const spotlightBanner = document.getElementById('spotlightBanner');

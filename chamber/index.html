@@ -57,30 +57,32 @@
                     <p>Location: Chamber Headquarters</p>
                 </section>
 
-                <!-- Weather Card Section -->
-                <section class="card">
-                    <h2>Weather</h2>
-                    <p>The current temperature in Guimaras, Philippines is <span id="current-temp"></span></p>
-                    <h3>Three Day Forecast</h3>
-                    <div id="forecast" class="forecast-container">
-                        <!-- Forecast items will be dynamically added here -->
-                    </div>
-                </section>
-            </div>
-            <!-- Company Spotlight Card Section -->
-            <div class="spotlight-container">
-                <!-- Spotlight Ads Section -->
-                <section class="card">
-                    <h3>Spotlight Ads</h3>
-                </section>
-                <!-- Banner -->
-                <div id="spotlightBanner" style="display: none;">
-                    <p>Attend the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.!</p>
-                    <button id="closeSpotlightBanner">Close</button>
+            <!-- Weather Card Section -->
+            <section class="card">
+                <h2>Weather</h2>
+                <p>The current temperature in Guimaras, Philippines is <span id="current-temp"></span></p>
+                <p>Weather Description: <span id="weather-description"></span></p>
+                <h3>Three Day Forecast</h3>
+                <div id="forecast" class="forecast-container">
+                    <!-- Forecast items will be dynamically added here -->
                 </div>
-            </div>
+            </section>
         </div>
-    </main>
+        <!-- Company Spotlight Card Section -->
+        <div class="spotlight-container">
+            <!-- Spotlight Ads Section -->
+            <section class="card" id="spotlight-ads-section">
+                <h3>Spotlight Ads</h3>
+                <!-- Spotlight ads will be dynamically added here -->
+            </section>
+        </div>
+        <!-- Banner -->
+        <div id="spotlightBanner">
+            <p>Attend the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.!</p>
+            <button id="closeSpotlightBanner">Close</button>
+        </div>
+    </div>
+</main>
 
     <!-- Footer -->
     <footer>
