@@ -20,9 +20,9 @@ Fonts are separated by a & */
   --paragraph-color-on-white: #05541e; /* paragraph text on a white background */ 
   --paragraph-color-on-color: rgb(250, 238, 238); /* paragraph text on a colored background */ 
   --paragraph-background-color: #3e5c88;
-  --nav-link-color: #3e5c88;
-  --nav-background-color: #e98b6d;
-  --nav-hover-link-color: black;
+  --nav-link-color: white;
+  --nav-background-color: #05541e;
+  --nav-hover-link-color: white;
   --nav-hover-background-color: #777e90;
 }
 
@@ -69,9 +69,11 @@ p {
   min-width: 350px;
   margin: 30px auto;
   text-align: center;
+  color: beige;
 }
 .colors th {
-  background-color: #999;
+  background-color: rgb(70, 65, 65);
+
 }
 .colors td{
   width: 25%;
