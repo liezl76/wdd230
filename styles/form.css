@@ -1,7 +1,7 @@
 :root {
 	--main-text-color: #333;
 	--main-bg-color: #f8f8f8;
-	--accent-color: #820000;
+	--accent-color: #3e5c88;
 }
 
 * {
@@ -49,7 +49,7 @@ form label.top,
 form div {
 	display: block;
 	padding-top: 1rem;
-	color: #9c2c13;
+	color: #3e5c88;
 	font-size: .8rem;
 	color: var(--main-text-color-light);
 }
