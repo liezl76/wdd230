@@ -10,10 +10,6 @@
         grid-template-columns: 1fr 2fr;
     }
 
-    .main-content {
-        grid-template-columns: repeat(1fr, 1fr);
-    }
-
 	#myButton {
 		display: none;
 	}
