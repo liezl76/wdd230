@@ -14,7 +14,7 @@ header {
     gap: 2rem;
     align-items: center;
     justify-content: center;
-    background-color: #e76915;
+    background-color: #3e5c88;
     padding: 20px; /* Increase padding for better spacing */
     margin: 1rem;
 }
@@ -35,13 +35,13 @@ header img {
 
 h1 {
     display: inline-block;
-    color: black;
+    color: whitesmoke;
     position: relative;
     top: -10px;
 }
 
 nav {
-    background-color: #e76915;
+    background-color: #3e5c88;
     margin: 1rem;
 }
 
@@ -63,7 +63,7 @@ nav {
 ul.menuLinks li a {
     display: block;
     padding: 1rem 2vw; 
-    color: black;
+    color: whitesmoke;
     text-decoration: none;
 }
 
@@ -140,8 +140,8 @@ button#closeSpotlightBanner {
 }
 
 footer {
-    background-color: #e76915; /*Primary */
-    color: black;
+    background-color: #3e5c88;
+    color: whitesmoke;
     padding: 10px;
     text-align: center;
 }
@@ -156,7 +156,7 @@ footer img {
 }
 
 .dark-mode body {
-    color: #fff;
+    color: black;
 }
 
 .dark-mode nav {
@@ -168,15 +168,15 @@ footer img {
 }
 
 .dark-mode .card {
-    border-color: #fff;
+    border-color: black;
     background-color: #1a1a1a;
 }
 
 .dark-mode h3,
 .dark-mode h1,
 .dark-mode footer {
-    background-color: #fcf8f8;
-    color: #fff;
+    background-color: rgb(245, 237, 226);
+    color: black;
 }
 
 /* CSS for the open class */
