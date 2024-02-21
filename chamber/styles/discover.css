@@ -121,9 +121,20 @@ nav a:hover {
     width: 75%;
     height: auto;
     padding: 10px;
-    aspect-ratio: 3/2;
     object-fit: contain;
     transition: transform 0.3s ease-in-out;
+    background: #000;
+    animation: fade 15s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .container img:hover {
