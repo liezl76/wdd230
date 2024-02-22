@@ -100,9 +100,9 @@ nav a:hover {
 
 .sidebar {
     margin: 0;
-    width: 400px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .main-content {
